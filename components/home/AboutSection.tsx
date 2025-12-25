@@ -30,7 +30,7 @@ function AboutSection() {
             <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
             <div className="absolute top-2/3 right-4 items-end lg:top-1/2 lg:-right-4 -translate-y-1/2 flex flex-col gap-2 z-10">
               <button className="w-9 h-9 bg-yellow-400 cursor-pointer rounded-full flex items-center justify-center hover:scale-95 transition">
-                <ChevronUp className="w-5 h-5" />
+                <ChevronUp className="w-5 h-5 text-black" />
               </button>
 
               <button className="px-3 py-1.5 border cursor-pointer rounded-full text-xs text-white lg:text-black font-medium hover:bg-sky-500 hover:text-white transition">
@@ -53,7 +53,7 @@ function AboutSection() {
               alt="Building"
               fill
               sizes="(min-width: 1024px) 300px"
-              className="object-cover rounded-xl transition-transform duration-500 group-hover:scale-95"
+              className="object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
             />
           </div>
 
@@ -77,7 +77,7 @@ function AboutSection() {
               alt="Building"
               fill
               sizes="(min-width: 1024px) 420px"
-              className="object-cover rounded-xl transition-transform duration-500 group-hover:scale-95"
+              className="object-cover rounded-xl transition-transform duration-500 group-hover:scale-105"
             />
 
             <div className="absolute bottom-0 -left-33 flex flex-col gap-3 items-end">

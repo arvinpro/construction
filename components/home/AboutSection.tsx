@@ -14,7 +14,7 @@ function AboutSection() {
               alt="Building"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw"
-              className="object-cover transition-transform duration-500 ease-out group-hover:scale-95"
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
             />
           </div>
 
@@ -25,7 +25,7 @@ function AboutSection() {
               alt="Building"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw"
-              className="object-cover transition-transform duration-500 ease-out group-hover:scale-95"
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
             <div className="absolute top-2/3 right-4 items-end lg:top-1/2 lg:-right-4 -translate-y-1/2 flex flex-col gap-2 z-10">

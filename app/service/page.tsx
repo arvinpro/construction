@@ -1,9 +1,10 @@
 import React from 'react'
+import OurServices from '@/components/services/OurServices'
 
 function page() {
   return (
-    <div className='min-h-screen flex justify-center items-center'>
-        <h1>Our Services</h1>
+    <div>
+      <OurServices />
     </div>
   )
 }

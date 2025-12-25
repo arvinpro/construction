@@ -49,7 +49,7 @@ export default function Navbar() {
   return (
     <nav
       className={`sticky top-0 z-50 ${sora.className} *
-    ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"}
+    ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-white"}
     `}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,7 +88,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          <div className="hidden md:flex items-center">
+          <div className="hidden lg:flex items-center">
             <Link
               href="tel:+9779851149961"
               className="flex items-center gap-2 bg-sky-700 text-white px-4 py-2.5 rounded-xl hover:bg-sky-800 transition hover:scale-95"

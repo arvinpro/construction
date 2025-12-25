@@ -1,9 +1,10 @@
 import React from 'react'
+import ContactPage from '@/components/contact/ContactPage'
 
 function page() {
   return (
-    <div className='min-h-screen flex justify-center items-center'>
-        <h1>Contact Us</h1>
+    <div>
+        <ContactPage />
     </div>
   )
 }

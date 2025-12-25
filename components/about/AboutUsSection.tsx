@@ -1,0 +1,216 @@
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import Achivements from "./Achivements";
+import WearePage from "./WearePage";
+import { raleway, open } from "@/lib/font";
+import ContactSection from "../home/ContactSection";
+
+
+const data = [
+  { per: "50%", name: "Project Completed" },
+  { per: "20%", name: "Years of Expertise" },
+  { per: "95%", name: "Delivery Rate" },
+  { per: "100%", name: "Skilled Professional" },
+];
+
+const teams = [
+  { image: "/johnny.jpg", name: "Rajesh Maharjan", role: "Sr. Developer" },
+  { image: "/johnny.jpg", name: "Anika Joshi", role: "Product Manager" },
+  { image: "/johnny.jpg", name: "Samir Patel", role: "UI/UX Designer" },
+  { image: "/johnny.jpg", name: "Lina Zhang", role: "Data Analyst" },
+  { image: "/johnny.jpg", name: "Carlos Mendez", role: "QA Engineer" },
+  { image: "/johnny.jpg", name: "Johnny Deep", role: "Marketing Sepcialist" },
+];
+
+function AboutUsSection() {
+  return (
+    <div className="bg-white min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-15">
+        {/*top heading*/}
+        <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0">
+          <div className="w-full lg:w-auto">
+            <div className="flex items-center gap-3 mb-2 sm:mb-3">
+              <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+              <span
+                className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+              >
+                About Us
+              </span>
+            </div>
+            <h1
+              className={`${raleway.className} text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
+            >
+              Who we are
+            </h1>
+          </div>
+          <span
+            className={`w-full lg:max-w-lg text-base lg:text-base text-black ${open.className} lg:text-left `}
+          >
+            Quick S and A Construction provides comprehensive solutions across
+            Nepal’s construction sector, combining innovation, technical
+            expertise, and professionalism to build lasting infrastructure.
+          </span>
+        </div>
+
+        {/*big image*/}
+        <div className="mt-10">
+          <div className="relative overflow-hidden w-full h-[300px] md:h-[400px] lg:h-125 rounded-lg">
+            <Image
+              src={"/industry.jpg"}
+              alt="industry"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
+
+            <div className="absolute bottom-7 left-9">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8 place-items-center text-white">
+                {data.map((items, index) => (
+                  <span
+                    key={index}
+                    className="flex flex-col items-center gap-2"
+                  >
+                    <h1 className="text-3xl lg:text-4xl font-semibold">
+                      {items.per}
+                    </h1>
+                    <p className="text-xs sm:text-base">{items.name}</p>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="mt-8">
+            <p className="font-semibold text-justify">
+              Quick S and A Construction Pvt. Ltd., established in 2076 B.S., is
+              a professional construction company headquartered in Kathmandu,
+              Nepal. Since its inception, the company has been dedicated to
+              delivering safe, sustainable, and innovative construction
+              solutions that meet the evolving needs of clients and communities.
+              We operate across a wide spectrum of services including
+              residential and commercial building construction, road and bridge
+              development, private residences, luxury resorts and villas,
+              commercial complexes, and hydropower projects. Each project is
+              executed with a focus on quality materials, advanced engineering
+              techniques, and strict safety standards, ensuring long-lasting
+              value and client satisfaction. With a team of experienced
+              engineers, architects, and project managers, Quick S and A
+              Construction has built a reputation for on-time project delivery,
+              cost-effectiveness, and transparent client engagement. Our growing
+              presence across Nepal reflects our ability to handle both
+              small-scale residential projects and large-scale infrastructure
+              developments with equal professionalism. At the core of our
+              operations lies a commitment to excellence, sustainability, and
+              innovation. Whether constructing a private home, a commercial hub,
+              or a hydropower facility, we aim to build structures that not only
+              serve today’s needs but also contribute to Nepal’s long-term
+              development and energy future.
+            </p>
+          </div>
+        </div>
+
+        {/*Achivements*/}
+        <Achivements />
+
+        {/*big text*/}
+        <div className="bg-gray-100 relative left-1/2 right-1/2 w-screen -ml-[50vw] -mr-[50vw] mt-10 md:mt-20">
+          <div
+            className={`${raleway.className} min-h-[160px] sm:min-h-[240px] lg:min-h-[360px]
+    flex items-center justify-center px-4 sm:px-6`}
+          >
+            <h1
+              className="text-center font-semibold leading-tight
+      text-xl sm:text-2xl md:text-3xl lg:text-4xl"
+            >
+              We deliver safe, sustainable, and innovative construction
+              solutions.
+              <span className="block mt-2 sm:mt-4 text-gray-400">
+                Our vision is to lead Nepal’s construction sector <br/> with quality
+                and trust.
+              </span>
+            </h1>
+          </div>
+        </div>
+
+        {/*message from director*/}
+        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 mt-10 md:mt-20 ">
+          <div className="space-y-4">
+            <h1 className={`text-2xl sm:text-3xl md:text-4xl font-semibold ${raleway.className}`}>Message from The Director</h1>
+            <p className="text-xs sm:text-base font-semibold text-justify">As the Director of our respected construction company, I am delighted to share our journey and achievements with you. With more than ten years of experience in the construction field, I have had the honor of leading a team committed to excellence in every project we take on. Our dedication to innovation and quality guarantees that each project not only meets but surpasses our clients' expectations. We are excited to continue building a future characterized by excellence and innovation. Thank you for your trust and support.</p>
+          </div>
+
+          <div className="relative overflow-hidden aspect-video rounded-4xl">
+            <Image 
+            src={"/johnny.jpg"}
+            alt="Director"
+            fill
+            className="object-cover"
+            />
+          </div>
+        </div>
+
+        {/**/}
+        <WearePage />
+
+
+        {/*our team*/}
+        <div className="mt-10 lg:mt-20">
+          <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0">
+            <div className="w-full lg:w-auto">
+              <div className="flex items-center gap-3 mb-2 sm:mb-3">
+                <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+                <span
+                  className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+                >
+                  About Us
+                </span>
+              </div>
+              <h1
+                className={`${raleway.className} text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
+              >
+                Meet our team
+              </h1>
+            </div>
+            <span
+              className={`w-full lg:max-w-lg text-base lg:text-base text-gray-600 ${open.className} lg:text-left `}
+            >
+              Quick S and A Construction provides comprehensive solutions across
+              Nepal’s construction sector, combining innovation, technical
+              expertise, and professionalism to build lasting infrastructure.
+            </span>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 mt-15">
+            {teams.map((team, index) => (
+              <div key={index} className="flex flex-col gap-2">
+                {/* Image wrapper */}
+                <div className="relative aspect-square overflow-hidden rounded-lg">
+                  <Image
+                    src={team.image}
+                    alt={team.role}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+
+                {/* Text below image */}
+                <div className="text-start">
+                  <h1 className="text-base font-semibold text-black">
+                    {team.name}
+                  </h1>
+                  <p className="text-sm text-gray-500">{team.role}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/*contact*/}
+        <div className="mt-10 lg:mt-20">
+          <ContactSection />
+        </div>
+        
+      </div>
+    </div>
+  );
+}
+
+export default AboutUsSection;

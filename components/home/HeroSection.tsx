@@ -1,12 +1,14 @@
 import { ArrowUpRight } from "lucide-react";
-import { raleway,  open } from "@/lib/font";
+import { raleway, open } from "@/lib/font";
 
 export default function HeroSection() {
   return (
     <div className="bg-white">
-      <div className={`${raleway.className} text-black font-raleway mb-12 space-y-3 `}>
+      <div
+        className={`${raleway.className} text-black font-raleway mb-12 space-y-3 `}
+      >
         <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-bold uppercase tracking-tight">
-          Your Trusted Construction 
+          Your Trusted Construction
         </h1>
         <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-bold uppercase tracking-tight">
           Partner in Nepal
@@ -19,6 +21,9 @@ export default function HeroSection() {
           {/*image1*/}
           <div className="col-span-12 lg:col-span-5">
             <div className="relative h-[260px] sm:h-[340px] md:h-[380px] lg:h-[430px] rounded-xl overflow-hidden group">
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              </div>
               <img
                 src="/homepage/home2.jpeg"
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -56,6 +61,9 @@ export default function HeroSection() {
           {/* image2 */}
           <div className="col-span-12 sm:col-span-6 lg:col-span-3">
             <div className="relative h-[220px] sm:h-[280px] md:h-[320px] lg:h-[380px] rounded-xl overflow-hidden group">
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              </div>
               <img
                 src="homepage/home3.jpeg"
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
@@ -66,6 +74,9 @@ export default function HeroSection() {
           {/* image3 */}
           <div className="col-span-12 sm:col-span-6 lg:col-span-4 relative z-20 lg:-mt-28">
             <div className="relative h-[300px] sm:h-[380px] md:h-[440px] lg:h-[560px] rounded-xl overflow-hidden group">
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              </div>
               <img
                 src="homepage/home1.jpeg"
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"

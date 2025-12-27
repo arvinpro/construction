@@ -9,6 +9,9 @@ function ContactSection() {
         <div className="hidden md:flex items-end gap-3 sm:gap-4 md:gap-6 w-full lg:w-auto">
           {/* First Image */}
           <div className="relative w-full sm:w-[280px] md:w-[350px] lg:w-[420px] xl:w-[500px] h-[200px] sm:h-[250px] md:h-[320px] lg:h-[420px] xl:h-[500px] overflow-hidden group">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+            </div>
             <Image
               src={"/building1.jpeg"}
               alt="building1"
@@ -23,6 +26,9 @@ function ContactSection() {
 
           {/* Second Image */}
           <div className="relative w-[45%] sm:w-[180px] md:w-[220px] lg:w-[250px] h-[180px] sm:h-[220px] md:h-[280px] lg:h-[320px] overflow-hidden group">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+            </div>
             <Image
               src={"/building2.jpeg"}
               alt="building2"

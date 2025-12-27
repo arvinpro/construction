@@ -14,6 +14,9 @@ function ServiceCard({ data }: Props) {
       } gap-8`}
     >
       <div className="relative w-full aspect-16/8 overflow-hidden rounded-4xl group">
+      <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
+    <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+  </div>
         <Image
           src={data.image}
           alt={data.title}

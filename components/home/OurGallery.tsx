@@ -2,8 +2,6 @@ import Image from "next/image";
 import { raleway, open } from "@/lib/font";
 import gallery from "@/data/gallery-data";
 
-
-
 function OurGallery() {
   return (
     <>
@@ -39,6 +37,9 @@ function OurGallery() {
             className="relative break-inside-avoid mb-4 w-full overflow-hidden rounded-lg group"
           >
             <div className="relative w-full">
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              </div>
               <Image
                 src={image.link}
                 alt={"gallery image"}

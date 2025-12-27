@@ -5,7 +5,6 @@ import WearePage from "./WearePage";
 import { raleway, open } from "@/lib/font";
 import ContactSection from "../home/ContactSection";
 
-
 const data = [
   { per: "50%", name: "Project Completed" },
   { per: "20%", name: "Years of Expertise" },
@@ -54,12 +53,17 @@ function AboutUsSection() {
 
         {/*big image*/}
         <div className="mt-10">
-          <div className="relative overflow-hidden w-full h-[300px] md:h-[400px] lg:h-125 rounded-lg">
+          <div className="relative overflow-hidden w-full h-[300px] md:h-[400px] lg:h-125 rounded-lg group cursor-pointer transition-all duration-500 hover:shadow-2xl">
+            {/* Shine overlay effect */}
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-20">
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+            </div>
+
             <Image
               src={"/industry.jpg"}
               alt="industry"
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
 
@@ -68,12 +72,16 @@ function AboutUsSection() {
                 {data.map((items, index) => (
                   <span
                     key={index}
-                    className="flex flex-col items-center gap-2"
+                    className="flex flex-col items-center gap-2 transition-transform duration-300 group-hover:scale-110"
                   >
-                    <h1 className="text-3xl lg:text-4xl font-semibold">
+                    <h1
+                      className={`text-3xl lg:text-4xl font-semibold ${raleway.className}`}
+                    >
                       {items.per}
                     </h1>
-                    <p className="text-xs sm:text-base">{items.name}</p>
+                    <p className={`text-xs sm:text-base ${open.className}`}>
+                      {items.name}
+                    </p>
                   </span>
                 ))}
               </div>
@@ -102,7 +110,7 @@ function AboutUsSection() {
               operations lies a commitment to excellence, sustainability, and
               innovation. Whether constructing a private home, a commercial hub,
               or a hydropower facility, we aim to build structures that not only
-              serve today’s needs but also contribute to Nepal’s long-term
+              serve today's needs but also contribute to Nepal's long-term
               development and energy future.
             </p>
           </div>
@@ -124,8 +132,8 @@ function AboutUsSection() {
               We deliver safe, sustainable, and innovative construction
               solutions.
               <span className="block mt-2 sm:mt-4 text-gray-400">
-                Our vision is to lead Nepal’s construction sector <br/> with quality
-                and trust.
+                Our vision is to lead Nepal’s construction sector <br /> with
+                quality and trust.
               </span>
             </h1>
           </div>
@@ -134,23 +142,39 @@ function AboutUsSection() {
         {/*message from director*/}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 mt-10 md:mt-20 ">
           <div className="space-y-4">
-            <h1 className={`text-2xl sm:text-3xl md:text-4xl font-semibold ${raleway.className}`}>Message from The Director</h1>
-            <p className="text-xs sm:text-base font-semibold text-justify">As the Director of our respected construction company, I am delighted to share our journey and achievements with you. With more than ten years of experience in the construction field, I have had the honor of leading a team committed to excellence in every project we take on. Our dedication to innovation and quality guarantees that each project not only meets but surpasses our clients' expectations. We are excited to continue building a future characterized by excellence and innovation. Thank you for your trust and support.</p>
+            <h1
+              className={`text-2xl sm:text-3xl md:text-4xl font-semibold ${raleway.className}`}
+            >
+              Message from The Director
+            </h1>
+            <p className="text-xs sm:text-base font-semibold text-justify">
+              As the Director of our respected construction company, I am
+              delighted to share our journey and achievements with you. With
+              more than ten years of experience in the construction field, I
+              have had the honor of leading a team committed to excellence in
+              every project we take on. Our dedication to innovation and quality
+              guarantees that each project not only meets but surpasses our
+              clients' expectations. We are excited to continue building a
+              future characterized by excellence and innovation. Thank you for
+              your trust and support.
+            </p>
           </div>
 
-          <div className="relative overflow-hidden aspect-video rounded-4xl">
-            <Image 
-            src={"/johnny.jpg"}
-            alt="Director"
-            fill
-            className="object-cover"
+          <div className="relative overflow-hidden aspect-video rounded-4xl group">
+            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+            </div>
+            <Image
+              src={"/johnny.jpg"}
+              alt="Director"
+              fill
+              className="object-cover transition-transform ease-out duration-300 group-hover:scale-105"
             />
           </div>
         </div>
 
         {/**/}
         <WearePage />
-
 
         {/*our team*/}
         <div className="mt-10 lg:mt-20">
@@ -180,20 +204,24 @@ function AboutUsSection() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-8 mt-15">
             {teams.map((team, index) => (
-              <div key={index} className="flex flex-col gap-2">
-                {/* Image wrapper */}
-                <div className="relative aspect-square overflow-hidden rounded-lg">
+              <div key={index} className="flex flex-col gap-2 group">
+                <div className="relative aspect-square overflow-hidden rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-xl">
+                  {/* Shine overlay effect */}
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
+                    <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                  </div>
+
                   <Image
                     src={team.image}
                     alt={team.role}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
 
                 {/* Text below image */}
                 <div className="text-start">
-                  <h1 className="text-base font-semibold text-black">
+                  <h1 className="text-base font-semibold text-black group-hover:text-sky-600 transition-colors duration-300">
                     {team.name}
                   </h1>
                   <p className="text-sm text-gray-500">{team.role}</p>
@@ -207,7 +235,6 @@ function AboutUsSection() {
         <div className="mt-10 lg:mt-20">
           <ContactSection />
         </div>
-        
       </div>
     </div>
   );

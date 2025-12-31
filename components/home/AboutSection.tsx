@@ -8,9 +8,9 @@ import Link from "next/link";
 
 function AboutSection() {
   const buttons = [
-    {label: "buildings", id: 1},
-    {label: "constructions",id:2}
-  ]
+    { label: "buildings", id: 1 },
+    { label: "constructions", id: 2 },
+  ];
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
       <div className="relative w-full">
@@ -47,13 +47,12 @@ function AboutSection() {
                   <ChevronUp className="w-5 h-5 text-black" />
                 </button>
               </ReactLink>
-              {buttons.map((button)=>(
+              {buttons.map((button) => (
                 <Link key={button.id} href={`/service#service-${button.id}`}>
                   <button className="px-3 py-1.5 border cursor-pointer rounded-full text-xs text-white md:text-black font-medium hover:bg-sky-500 hover:text-white transition">
-                {button.label}
-              </button>
+                    {button.label}
+                  </button>
                 </Link>
-                 
               ))}
             </div>
           </div>
@@ -107,13 +106,22 @@ function AboutSection() {
                 </button>
               </ReactLink>
 
-              <button className="px-4 py-2 border cursor-pointer rounded-full text-sm text-black font-medium hover:bg-sky-500 hover:text-white hover:scale-95 ease-out duration-300 transition">
-                buildings
-              </button>
-
-              <button className="px-4 py-2 border cursor-pointer rounded-full text-sm text-black font-medium hover:bg-sky-500 hover:text-white hover:scale-95 ease-out duration-300 transition">
-                constructions
-              </button>
+              {buttons.map((button) => (
+                <Link
+                  key={button.id}
+                  href={`/service#service-${button.id}`}
+                  className="block"
+                >
+                  <button
+                    className="px-4 py-2 border cursor-pointer rounded-full 
+      text-sm text-black font-medium 
+      hover:bg-sky-500 hover:text-white 
+      hover:scale-95 ease-out duration-300 transition"
+                  >
+                    {button.label}
+                  </button>
+                </Link>
+              ))}
             </div>
           </div>
         </div>

@@ -28,7 +28,7 @@ function ServiceCard({ data }: Props) {
               prevEl: `.swiper-button-prev-${data.id}`,
             }}
             loop
-            className="my-service-swiper w-full h-full relative"
+            className="my-service-swiper w-full h-full relative group"
           >
             {data.image.map((img, index) => (
               <SwiperSlide key={`${data.id}-${index}`}>
@@ -43,7 +43,18 @@ function ServiceCard({ data }: Props) {
 
             {/* Custom Navigation Buttons */}
             <button
-              className={`swiper-button-prev-${data.id} absolute top-1/2 left-2 z-20 p-3 rounded-full bg-white/50 hover:bg-white cursor-pointer shadow-md transform -translate-y-1/2`}
+              className={`swiper-button-prev-${data.id}
+    absolute top-1/2 left-2 z-20
+    p-3 rounded-full
+    bg-white/60 hover:bg-white
+    shadow-md cursor-pointer
+    -translate-y-1/2
+
+    opacity-0 pointer-events-none
+    group-hover:opacity-100 group-hover:pointer-events-auto
+    transition-all duration-300
+    group-hover:translate-x-0 -translate-x-2
+  `}
             >
               <svg
                 className="w-6 h-6 text-sky-800"
@@ -61,7 +72,18 @@ function ServiceCard({ data }: Props) {
             </button>
 
             <button
-              className={`swiper-button-next-${data.id} absolute top-1/2 right-2 z-20 p-3 rounded-full bg-white/50 hover:bg-white cursor-pointer shadow-md transform -translate-y-1/2`}
+              className={`swiper-button-next-${data.id}
+    absolute top-1/2 right-2 z-20
+    p-3 rounded-full
+    bg-white/60 hover:bg-white
+    shadow-md cursor-pointer
+    -translate-y-1/2
+
+    opacity-0 pointer-events-none
+    group-hover:opacity-100 group-hover:pointer-events-auto
+    transition-all duration-300
+    group-hover:translate-x-0 translate-x-2
+  `}
             >
               <svg
                 className="w-6 h-6 text-sky-800"

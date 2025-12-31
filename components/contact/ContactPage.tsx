@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { Raleway } from "next/font/google";
@@ -23,14 +23,16 @@ const allowedDomains = [
 ];
 
 const ContactFormSchema = z.object({
-  first_name: z.string()
-    .min(2, 'First name must be at least 2 characters')
-    .max(20, 'First name must not exceed 20 characters')
-    .regex(/^[a-zA-Z]+$/, 'First name must contain letters only'),
-  last_name: z.string()
-    .min(2, 'Last name must be at least 2 characters')
-    .max(20, 'Last name must not exceed 20 characters')
-    .regex(/^[a-zA-Z]+$/, 'Last name must contain letters only'),
+  first_name: z
+    .string()
+    .min(2, "First name must be at least 2 characters")
+    .max(20, "First name must not exceed 20 characters")
+    .regex(/^[a-zA-Z]+$/, "First name must contain letters only"),
+  last_name: z
+    .string()
+    .min(2, "Last name must be at least 2 characters")
+    .max(20, "Last name must not exceed 20 characters")
+    .regex(/^[a-zA-Z]+$/, "Last name must contain letters only"),
   email: z
     .string()
     .email("Invalid email address")
@@ -46,16 +48,16 @@ const ContactFormSchema = z.object({
     ),
   phone: z
     .string()
-    .min(1, 'Phone number is required')
+    .min(1, "Phone number is required")
     .regex(
       /^(\+?977)?[9][6-9]\d{8}$/,
-      'Please enter a valid Nepali phone number (e.g., 9851149961 or +9779851149961)'
+      "Please enter a valid Nepali phone number (e.g., 9851149961 or +9779851149961)"
     ),
   message: z
     .string()
-    .min(10, 'Message must be at least 10 characters')
-    .max(1000, 'Message must not exceed 1000 characters')
-})
+    .min(10, "Message must be at least 10 characters")
+    .max(1000, "Message must not exceed 1000 characters"),
+});
 
 type FormData = z.infer<typeof ContactFormSchema>;
 
@@ -76,20 +78,20 @@ function ContactPage() {
     register,
     handleSubmit,
     reset,
-    formState: { isSubmitting, errors }
+    formState: { isSubmitting, errors },
   } = useForm<FormData>({
     resolver: zodResolver(ContactFormSchema),
-    mode: 'onBlur'
-  })
+    mode: "onBlur",
+  });
 
   const onSubmit = async (data: FormData) => {
     try {
-      console.log('Form submitted:', data);
-      toast.success('Message sent successfully!');
+      console.log("Form submitted:", data);
+      toast.success("Message sent successfully!");
       reset();
     } catch (error) {
-      console.error('Submission error:', error);
-      toast.error('Failed to send message. Please try again.');
+      console.error("Submission error:", error);
+      toast.error("Failed to send message. Please try again.");
     }
   };
 
@@ -135,13 +137,18 @@ function ContactPage() {
           <div className="bg-gray-50 rounded-xl max-w-xl">
             <div className="flex flex-col gap-6 px-6 py-6">
               <div className="space-y-2">
-                <h1 className="text-3xl text-black">Let's Talk About Your Projects</h1>
+                <h1 className="text-3xl text-black">
+                  Let's Talk About Your Projects
+                </h1>
                 <p className="text-gray-900">
                   Contact us regarding any concerns or inquiries.
                 </p>
               </div>
 
-              <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 gap-4">
+              <form
+                onSubmit={handleSubmit(onSubmit)}
+                className="grid grid-cols-1 gap-4"
+              >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label
@@ -157,8 +164,8 @@ function ContactPage() {
                       placeholder="Enter"
                       className={`w-full px-4 py-3 border bg-white rounded-lg outline-none transition ${
                         errors.first_name
-                          ? 'border-red-500 focus:ring-2 focus:ring-red-500'
-                          : 'border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                          ? "border-red-500 focus:ring-2 focus:ring-red-500"
+                          : "border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       }`}
                     />
                     <ErrorMessage message={errors.first_name?.message} />
@@ -177,8 +184,8 @@ function ContactPage() {
                       placeholder="Enter"
                       className={`w-full px-4 py-3 border bg-white rounded-lg outline-none transition ${
                         errors.last_name
-                          ? 'border-red-500 focus:ring-2 focus:ring-red-500'
-                          : 'border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                          ? "border-red-500 focus:ring-2 focus:ring-red-500"
+                          : "border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                       }`}
                     />
                     <ErrorMessage message={errors.last_name?.message} />
@@ -200,8 +207,8 @@ function ContactPage() {
                     placeholder="Enter your Email"
                     className={`w-full px-4 py-3 border bg-white rounded-lg outline-none transition ${
                       errors.email
-                        ? 'border-red-500 focus:ring-2 focus:ring-red-500'
-                        : 'border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                        ? "border-red-500 focus:ring-2 focus:ring-red-500"
+                        : "border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     }`}
                   />
                   <ErrorMessage message={errors.email?.message} />
@@ -222,8 +229,8 @@ function ContactPage() {
                     placeholder="Enter your phone number"
                     className={`w-full px-4 py-3 border bg-white rounded-lg outline-none transition ${
                       errors.phone
-                        ? 'border-red-500 focus:ring-2 focus:ring-red-500'
-                        : 'border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                        ? "border-red-500 focus:ring-2 focus:ring-red-500"
+                        : "border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     }`}
                   />
                   <ErrorMessage message={errors.phone?.message} />
@@ -243,23 +250,23 @@ function ContactPage() {
                     placeholder="Type a message here..."
                     className={`w-full px-4 py-3 border bg-white rounded-lg outline-none transition resize-none ${
                       errors.message
-                        ? 'border-red-500 focus:ring-2 focus:ring-red-500'
-                        : 'border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                        ? "border-red-500 focus:ring-2 focus:ring-red-500"
+                        : "border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                     }`}
                   ></textarea>
                   <ErrorMessage message={errors.message?.message} />
                 </div>
                 {/* Submit Button */}
-                <button 
+                <button
                   type="submit"
                   disabled={isSubmitting}
                   className={`bg-sky-800 text-white font-medium px-8 py-3 rounded-lg transition duration-200 ${
                     isSubmitting
-                      ? 'opacity-50 cursor-not-allowed'
-                      : 'cursor-pointer hover:bg-sky-900'
+                      ? "opacity-50 cursor-not-allowed"
+                      : "cursor-pointer hover:bg-sky-900"
                   }`}
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
               </form>
             </div>
@@ -312,14 +319,14 @@ function ContactPage() {
                   {/* Map */}
                   <div className="overflow-hidden shadow-lg h-96 mt-8">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14127.374906939394!2d85.29!3d27.73!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb191a11b0b515%3A0x8aa1d3f8e8e8e8e8!2sNagarjun%2C%20Kathmandu%2044600!5e0!3m2!1sen!2snp!4v1234567890"
-                      width="100%"
-                      height="100%"
+                      src="https://www.google.com/maps/embed?pb=!4v1767168573376!6m8!1m7!1sJtAPnEhWqzEkkaAKaPJQXQ!2m2!1d27.72600605468447!2d85.2423342463699!3f348.68!4f0!5f0.7820865974627469"
+                      className="w-full h-full"
                       style={{ border: 0 }}
+                      allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Location Map"
-                    ></iframe>
+                      title="Street View Location"
+                    />
                   </div>
                 </div>
               </div>

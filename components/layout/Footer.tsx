@@ -1,57 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Amaranth } from "next/font/google";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import z from "zod";
-import toast from "react-hot-toast";
-
-
-const allowedDomains = [
-  "gmail.com",
-  "icloud.com",
-  "outlook.com",
-  "hotmail.com",
-  "live.com",
-  "yahoo.com",
-  "proton.me",
-  "protonmail.com",
-  "zoho.com",
-];
-
-const amarnath = Amaranth({
-  subsets: ["latin"],
-  weight: ["400", "700"],
-  display: "swap",
-});
-
-const NewsLetterSchema = z.object({
-  email: z
-    .string()
-    .email("Invalid email address")
-    .refine(
-      (email) => {
-        const domain = email.split("@")[1];
-        return allowedDomains.includes(domain);
-      },
-      {
-        message:
-          "Please use a valid email provider (Gmail, Apple, Outlook, etc.)",
-      }
-    ),
-});
-
-type NewsletterFormData = z.infer<typeof NewsLetterSchema>;
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
-  display: "swap",
-});
 
 const amaranth = Amaranth({
   subsets: ["latin"],
@@ -59,43 +12,43 @@ const amaranth = Amaranth({
   display: "swap",
 });
 
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  display: "swap",
+});
+
+
 export default function Footer() {
   const links = [
-  { name: "About Us", href: "/about" },
-  { name: "Services", href: "/service" },
-  { name: "Projects", href: "#" },
-  { name: "Why Choose Us", href: "/#" },
-  { name: "Contact Us", href: "/contact" },
-];
+    { name: "About Us", href: "/about" },
+    { name: "Services", href: "/service" },
+    { name: "Projects", href: "#" },
+    { name: "Why Choose Us", href: "/#" },
+    { name: "Contact Us", href: "/contact" },
+  ];
 
-  const {
-    register,
-    handleSubmit,
-    reset,
-    formState: { errors, isSubmitting },
-  } = useForm<NewsletterFormData>({
-    resolver: zodResolver(NewsLetterSchema),
-  });
+  const services = [
+    "Building Construction",
+    "Road Construction",
+    "Bridge Construction",
+    "Private Residence",
+    "Resort & Villa",
+    "Commercial Complexes",
+  ];
 
-  const onSubmit = (data: NewsletterFormData) => {
-    try {
-      toast.success("Subscribed Successfully!!");
-      reset();
-    } catch (error) {
-      toast.error("Something went wrong!!!");
-    }
-  };
   return (
     <footer className="bg-gray-800 text-gray-300">
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        {/* Top Section: Logo + Government Clients */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 mb-16">
-          {/*Logo and Text */}
-          <Link href={"/"}>
-            <div className="flex items-center justify-start">
+          {/* Logo and Company Info */}
+          <div className="flex items-center justify-start">
+            <Link href={"/"} className="block">
               <div className="flex flex-col items-center text-center leading-none">
                 <Image
                   src="/myquicklogo.png"
-                  alt="Logo"
+                  alt="Quick S & A Construction Logo"
                   width={80}
                   height={80}
                   className="block h-40 w-auto object-contain"
@@ -103,72 +56,57 @@ export default function Footer() {
                 />
 
                 <p
-                  className={`-mt-6 sm:-mt-8 text-red-400 font-semibold uppercase
-        text-[0.9rem] md:text-[1.35rem] leading-none
-        ${amarnath.className}`}
+                  className={`-mt-6 sm:-mt-8 text-red-400 font-semibold uppercase text-[0.9rem] leading-none ${amaranth.className}`}
                 >
                   quick s & a construction (p) ltd
                 </p>
 
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl text-white leading-tight mt-4">
+                <h2 className="text-2xl text-white leading-tight mt-6">
                   THE SOLUTION FOR
                   <br />
                   <span className="text-white font-bold">CONSTRUCTION.</span>
                 </h2>
               </div>
-            </div>
-          </Link>
-          {/*Newsletter Signup */}
-          <div className="flex flex-col items-start justify-center">
-            <div className="w-full max-w-md">
-              <h3 className="text-2xl lg:text-3xl font-bold text-white mb-2 lg:mb-6 text-left  lg:text-center">
-                Newsletter Update
-              </h3>
-              <form
-                onSubmit={handleSubmit(onSubmit)}
-                className="relative w-full"
-                noValidate
-              >
-                <input
-                  type="email"
-                  placeholder="Enter your email address ..."
-                  className={`w-full bg-transparent border-b-2 py-4 pr-14
-          text-gray-200 placeholder-gray-500 focus:outline-none
-          transition-colors text-lg
-          ${
-            errors.email
-              ? "border-red-500 focus:border-red-400"
-              : "border-gray-500 focus:border-blue-400"
-          }`}
-                  {...register("email")}
-                />
-
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="absolute right-0 top-1/2 -translate-y-1/2
-          text-gray-400 hover:text-blue-400 transition-colors
-          disabled:opacity-50"
-                  aria-label="Subscribe to newsletter"
-                >
-                  <Send className="w-7 h-7" />
-                </button>
-
-                {errors.email && (
-                  <p className="mt-2 text-sm text-red-500">
-                    {errors.email.message}
-                  </p>
-                )}
-              </form>
-              <p className="mt-3 text-sm text-gray-500 text-left">
-                Stay updated with our latest projects and offers.
-              </p>
-            </div>
+            </Link>
           </div>
+
+          {/* Google Map Location */}
+<div className="flex flex-col justify-center">
+  <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+    Our Location
+  </h3>
+
+  <div className="w-full 
+                  h-[220px] 
+                  overflow-hidden rounded-xl shadow-lg border border-gray-700 bg-gray-700">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1123456789!2d85.2423342463699!3d27.72600605468447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb191a11b0b515%3A0x8aa1d3f8e8e8e8e8!2sNagarjun-07%2C%20Kathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1700000000000"
+      className="w-full h-full"
+      style={{ border: 0 }}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      title="Quick S & A Construction Location"
+    />
+  </div>
+
+  <p className="mt-4 text-sm text-gray-400">
+    Nagarjun-07, Kathmandu, Nepal
+  </p>
+
+  <Link
+    href="https://maps.app.goo.gl/VYCXag5TdMPHTqKq9"
+    target="_blank"
+    className="mt-2 inline-flex items-center gap-1 text-sm text-blue-400 hover:text-blue-300 transition"
+  >
+    View on Google Maps →
+  </Link>
+</div>
+
         </div>
 
-        {/* Links & Contact*/}
+        {/* Links, Services & Contact */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16 pb-12 border-b border-gray-700">
+          {/* Quick Links */}
           <div>
             <h4 className="text-xl font-bold text-white mb-6">Quick Links</h4>
             <ul className="space-y-4">
@@ -191,14 +129,7 @@ export default function Footer() {
               Services
             </h4>
             <ul className="space-y-4">
-              {[
-                "Building Construction",
-                "Road Construction",
-                "Bridge Construction",
-                "Private Residence",
-                "Resort & Villa",
-                "Commercial Complexes",
-              ].map((service) => (
+              {services.map((service) => (
                 <li key={service}>
                   <Link
                     href="#"
@@ -211,7 +142,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact*/}
+          {/* Contact Info */}
           <div className="sm:col-span-2 lg:col-span-1">
             <h4 className="text-xl font-bold text-white mb-6">Contact Info</h4>
             <ul className="space-y-5">
@@ -243,13 +174,12 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Footer*/}
+        {/* Bottom Bar */}
         <div
           className={`pt-8 flex flex-col sm:flex-row justify-between items-center gap-6 text-sm lg:text-base ${inter.className}`}
         >
           <p className="text-gray-400 text-center sm:text-left">
-            Copyright © Quick S & A Construction Pvt Ltd 2025. All rights
-            reserved.
+            Copyright © Quick S & A Construction Pvt Ltd 2025. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-gray-400">
             <a href="#" className="hover:text-white transition-colors">

@@ -36,7 +36,10 @@ export default function GallerySwiper() {
           modifier: 3,
           slideShadows: false,
         }}
-        pagination={{ clickable: true }}
+        pagination={{ clickable: true ,
+          el: '.custom-pagination'
+        }}
+
         navigation={{
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
@@ -60,16 +63,43 @@ export default function GallerySwiper() {
           </SwiperSlide>
         ))}
 
+         {/* 🔹 Pagination BELOW images */}
+      <div className="custom-pagination flex justify-center mt-6" />
+      
         {/* Controls */}
-        <div className="flex items-center justify-center gap-6 mt-8">
-          <button className="swiper-button-prev text-sky-700 text-2xl">
-            <IoArrowBack />
-          </button>
-          <div className="swiper-pagination relative! w-auto!"></div>
-          <button className="swiper-button-next text-sky-700 text-2xl">
-            <IoArrowForward />
-          </button>
-        </div>
+        <div className="flex justify-center gap-4">
+        <button className="swiper-button-prev bg-white hover:bg-gray-100 p-3 rounded-full shadow-md transition">
+          <svg
+            className="w-6 h-6 text-gray-700"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={1}
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+
+        <button className="swiper-button-next bg-white hover:bg-gray-100 p-3 rounded-full shadow-md transition">
+          <svg
+            className="w-6 h-6 text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={1}
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
       </Swiper>
     </div>
   );

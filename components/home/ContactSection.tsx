@@ -1,6 +1,9 @@
+'use client'
+
 import Image from "next/image";
 import { raleway, open } from "@/lib/font";
 import { ArrowUpRight } from "lucide-react";
+import { Link } from "react-scroll";
 
 function ContactSection() {
   return (
@@ -19,9 +22,11 @@ function ContactSection() {
               priority
               className="object-cover group-hover:scale-105 transition-transform ease-out duration-500"
             />
-            <button className="absolute cursor-pointer bottom-3 sm:bottom-4 md:bottom-6 left-3 sm:left-4 md:left-6 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-yellow-400 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
-              <ArrowUpRight className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-black" />
-            </button>
+            <Link to="hero" smooth={true} duration={600} offset={-130}>
+              <button className="absolute cursor-pointer bottom-3 sm:bottom-4 md:bottom-6 left-3 sm:left-4 md:left-6 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-yellow-400 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <ArrowUpRight className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-black" />
+              </button>
+            </Link>
           </div>
 
           {/* Second Image */}
@@ -62,10 +67,10 @@ function ContactSection() {
           <div className="relative flex flex-col gap-4 sm:gap-6 lg:gap-8 md:self-end w-full">
             <div className="flex flex-col gap-1.5 sm:gap-2">
               <div className="flex justify-between items-end gap-4">
-                <span className="text-xs sm:text-sm md:text-base text-gray-600 whitespace-nowrap">
+                <span className="text-xs sm:text-sm md:text-base text-gray-800 whitespace-nowrap">
                   PHONE
                 </span>
-                <span className="font-semibold text-xs sm:text-sm md:text-base text-right">
+                <span className="font-semibold text-black text-xs sm:text-sm md:text-base text-right">
                   +977-9851149961
                 </span>
               </div>
@@ -75,10 +80,10 @@ function ContactSection() {
             {/* Email */}
             <div className="flex flex-col gap-1.5 sm:gap-2">
               <div className="flex justify-between items-end gap-4">
-                <span className="text-xs sm:text-sm md:text-base text-gray-600 whitespace-nowrap">
+                <span className="text-xs sm:text-sm md:text-base text-gray-800 whitespace-nowrap">
                   EMAIL
                 </span>
-                <span className="font-semibold text-xs sm:text-sm md:text-base text-right break-all">
+                <span className="font-semibold text-black text-xs sm:text-sm md:text-base text-right break-all">
                   quicksnaconstruction@gmail.com
                 </span>
               </div>
@@ -88,10 +93,10 @@ function ContactSection() {
             {/* Location */}
             <div className="flex flex-col gap-1.5 sm:gap-2">
               <div className="flex justify-between items-end gap-4">
-                <span className="text-xs sm:text-sm md:text-base text-gray-600 whitespace-nowrap">
+                <span className="text-xs sm:text-sm md:text-base text-gray-800 whitespace-nowrap">
                   LOCATION
                 </span>
-                <span className="font-semibold text-xs sm:text-sm md:text-base text-right">
+                <span className="font-semibold text-black text-xs sm:text-sm md:text-base text-right">
                   Nagarjun-07, Kathmandu, Nepal
                 </span>
               </div>

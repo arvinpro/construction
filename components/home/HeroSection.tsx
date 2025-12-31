@@ -1,16 +1,24 @@
 import { ArrowUpRight } from "lucide-react";
 import { raleway, open } from "@/lib/font";
+import Link from "next/link";
 
 export default function HeroSection() {
+  const services = [
+    { label: "Residential & Commercial", id: 6 },
+    { label: "Roads & Bridges", id: 2 },
+    { label: "Resorts & Villas", id: 5 },
+  ];
+
   return (
-    <div className="bg-white">
+    <>
       <div
+        id="hero"
         className={`${raleway.className} text-black font-raleway mb-12 space-y-3 `}
       >
-        <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-bold uppercase tracking-tight">
+        <h1 className="text-3xl sm:text-4xl font-bold uppercase tracking-tight">
           Your Trusted Construction
         </h1>
-        <h1 className="text-3xl sm:text-4xl lg:text-[42px] font-bold uppercase tracking-tight">
+        <h1 className="text-3xl sm:text-4xl font-bold uppercase tracking-tight">
           Partner in Nepal
         </h1>
       </div>
@@ -43,17 +51,16 @@ export default function HeroSection() {
 
             {/* Buttons */}
             <div className="mt-4 flex flex-wrap gap-3 text-black">
-              {[
-                "Residential & Commercial",
-                "Roads & Bridges",
-                "Resorts & Villas",
-              ].map((item) => (
-                <span
-                  key={item}
-                  className="px-4 py-2 border rounded-full text-xs sm:text-sm font-medium cursor-pointer hover:scale-95 transition duration-300 hover:bg-sky-500 hover:text-white"
-                >
-                  {item}
-                </span>
+              {services.map((service) => (
+                <Link key={service.id} href={`/service#service-${service.id}`}>
+                  <span
+                    className="px-4 py-2 border rounded-full text-xs sm:text-sm font-medium cursor-pointer
+                   hover:scale-95 transition duration-300
+                   hover:bg-sky-500 hover:text-white"
+                  >
+                    {service.label}
+                  </span>
+                </Link>
               ))}
             </div>
           </div>
@@ -96,12 +103,14 @@ export default function HeroSection() {
               </p>
 
               <button className="absolute cursor-pointer bottom-4 sm:bottom-6 right-4 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 bg-yellow-400 rounded-full flex items-center justify-center hover:scale-110 transition">
-                <ArrowUpRight className="w-8 h-8 sm:w-10 sm:h-10 text-black" />
+                <Link href="/service">
+                  <ArrowUpRight className="w-8 h-8 sm:w-10 sm:h-10 text-black" />
+                </Link>
               </button>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

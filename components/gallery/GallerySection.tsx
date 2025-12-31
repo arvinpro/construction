@@ -8,14 +8,14 @@ import ContactSection from "../home/ContactSection";
 
 function GallerySection() {
   return (
-    <section className="bg-white min-h-screen">
+    <section id="hero" className="bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-15">
         <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0">
           <div className="w-full lg:w-auto">
             <div className="flex items-center gap-3 mb-2 sm:mb-3">
-              <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+              <div className="w-8 sm:w-10 lg:w-12 h-px bg-black"></div>
               <span
-                className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+                className={`text-black font-medium tracking-wide text-sm sm:text-base ${open.className}`}
               >
                 Our Gallery
               </span>

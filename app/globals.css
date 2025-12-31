@@ -66,3 +66,16 @@ body {
   opacity: 1;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
+
+.my-service-swiper .swiper-button-next::after,
+.my-service-swiper .swiper-button-prev::after {
+  color: #0ea5e9; /* Tailwind sky-500 */
+  font-size: 24px;
+}
+
+.my-service-swiper .swiper-button-next:hover::after,
+.my-service-swiper .swiper-button-prev:hover::after {
+  color: #0284c7; /* Tailwind sky-600 on hover */
+}
+
+

@@ -61,21 +61,21 @@ export default function Reviews() {
       <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0">
         <div className="w-full lg:w-auto">
           <div className="flex items-center gap-3 mb-2 sm:mb-3">
-            <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+            <div className="w-8 sm:w-10 lg:w-12 h-px bg-black"></div>
             <span
-              className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+              className={`text-black font-medium tracking-wide text-sm sm:text-base ${open.className}`}
             >
               Client Reviews
             </span>
           </div>
           <h1
-            className={`${raleway.className} text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
+            className={`${raleway.className} text-black text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
           >
             What Our Clients Say
           </h1>
         </div>
         <span
-          className={`w-full lg:max-w-lg text-base lg:text-base text-gray-600 ${open.className} lg:text-left `}
+          className={`w-full lg:max-w-lg text-base lg:text-base text-black ${open.className} lg:text-left `}
         >
           Our clients’ feedback reflects the quality, commitment, and
           craftsmanship we bring to every project. From residential construction
@@ -117,12 +117,12 @@ export default function Reviews() {
                   <h3 className="text-lg sm:text-xl font-semibold text-gray-800">
                     {review.name}
                   </h3>
-                  <p className="text-sm text-gray-600">{review.services}</p>
+                  <p className="text-sm text-gray-700">{review.services}</p>
                 </div>
               </div>
 
               {/* Review */}
-              <p className="text-gray-700 flex-grow text-sm sm:text-base">
+              <p className="text-gray-700 grow text-sm sm:text-base">
                 “{review.review}”
               </p>
 

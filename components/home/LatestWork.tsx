@@ -12,9 +12,9 @@ function LatestWork() {
       <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0 mb-8">
         <div className="w-full lg:w-auto">
           <div className="flex items-center gap-3 mb-3 sm:mb-4">
-            <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+            <div className="w-8 sm:w-10 lg:w-12 h-px bg-black"></div>
             <span
-              className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+              className={`text-black font-medium tracking-wide text-sm sm:text-base ${open.className}`}
             >
               Our Services
             </span>
@@ -26,7 +26,7 @@ function LatestWork() {
           </h1>
         </div>
         <span
-          className={`w-full lg:max-w-lg text-base lg:text-base text-gray-400 ${open.className} font-normal lg:text-left `}
+          className={`w-full lg:max-w-lg text-base lg:text-base text-black ${open.className} font-normal lg:text-left `}
         >
           Explore some of our recent success stories showcasing quality,
           innovation, and timely delivery across Nepal.
@@ -63,20 +63,20 @@ function LatestWork() {
                   className={`flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-8 px-4 uppercase ${raleway.className}`}
                 >
                   <div className="absolute left-0 ml-7">
-                    <p className="text-gray-500 text-xs sm:text-sm">Client</p>
-                    <h1 className="font-semibold text-sm sm:text-base">
+                    <p className="text-gray-800 text-xs sm:text-sm">Client</p>
+                    <h1 className="font-semibold text-black text-sm sm:text-base">
                       HALSTEAD CORPORATION
                     </h1>
-                    <div className="max-w-full h-px bg-gray-400 mt-1"></div>
+                    <div className="max-w-full h-px bg-black mt-1"></div>
                   </div>
                   <div className="absolute right-0 mr-7">
-                    <p className="text-gray-500 text-xs sm:text-sm">
+                    <p className="text-gray-800 text-xs sm:text-sm">
                       Finished Date
                     </p>
-                    <h1 className="font-semibold text-sm sm:text-base">
+                    <h1 className="font-semibold text-black text-sm sm:text-base">
                       15 June 2023
                     </h1>
-                    <div className="max-w-full h-px bg-gray-400 mt-1"></div>
+                    <div className="max-w-full h-px bg-black mt-1"></div>
                   </div>
                 </div>
               </div>
@@ -114,20 +114,20 @@ function LatestWork() {
                   className={`flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 sm:gap-8 px-4 uppercase ${raleway.className}`}
                 >
                   <div className="absolute left-0 ml-7">
-                    <p className="text-gray-500 text-xs sm:text-sm">Client</p>
-                    <h1 className="font-semibold text-sm sm:text-base">
+                    <p className="text-gray-800 text-xs sm:text-sm">Client</p>
+                    <h1 className="font-semibold text-black text-sm sm:text-base">
                       HALSTEAD CORPORATION
                     </h1>
                     <div className="max-w-full h-px bg-gray-400 mt-1"></div>
                   </div>
                   <div className="absolute right-0 mr-7">
-                    <p className="text-gray-500 text-xs sm:text-sm">
+                    <p className="text-gray-800 text-xs sm:text-sm">
                       Finished Date
                     </p>
-                    <h1 className="font-semibold text-sm sm:text-base">
+                    <h1 className="font-semibold text-black text-sm sm:text-base">
                       15 June 2023
                     </h1>
-                    <div className="max-w-full h-px bg-gray-400 mt-1"></div>
+                    <div className="max-w-full h-px bg-gray-800 mt-1"></div>
                   </div>
                 </div>
               </div>

@@ -9,15 +9,15 @@ import ContactSection from "../home/ContactSection";
 
 function OurServices() {
   return (
-    <div className="bg-white min-h-screen">
+    <div id="hero" className="bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-15">
         {/*heading*/}
         <div className="flex flex-col md:flex-row justify-between items-start sm:items-center gap-6 lg:gap-0">
           <div className="w-full lg:w-auto">
             <div className="flex items-center gap-3 mb-2 sm:mb-3">
-              <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+              <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-800"></div>
               <span
-                className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+                className={`text-gray-800 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
               >
                 Our Services
               </span>
@@ -44,11 +44,11 @@ function OurServices() {
         </div>
 
         {/*images slide*/}
-        <div className="mt-10 md:mt-15">
+        <div className="mt-10 md:mt-20">
           <SwiperSlide />
         </div>
         {/*middle text content*/}
-        <div className="flex flex-col justify-center items-start lg:items-center gap-4 md:gap-6 mt-10 md:mt-15">
+        <div className="flex flex-col justify-center items-start lg:items-center gap-4 md:gap-6 mt-14 md:mt-25">
           <h1
             className={`text-2xl sm:text-4xl lg:text-5xl font-semibold uppercase ${raleway.className}`}
           >

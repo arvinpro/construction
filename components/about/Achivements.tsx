@@ -21,16 +21,16 @@ function Achivements() {
       {/* LEFT CONTENT */}
       <div className="max-w-xl">
         <div className="flex items-center gap-3 mb-3">
-          <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600" />
+          <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-800" />
           <span
-            className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+            className={`text-gray-800 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
           >
             Achievements
           </span>
         </div>
 
         <h1
-          className={`${raleway.className} text-xl sm:text-2xl md:text-3xl font-semibold leading-relaxed`}
+          className={`${raleway.className} text-black text-xl sm:text-2xl md:text-3xl font-semibold leading-relaxed`}
         >
           We have successfully completed residential complexes, commercial hubs,
           highways, bridges, and luxury villas across Nepal. Our growing

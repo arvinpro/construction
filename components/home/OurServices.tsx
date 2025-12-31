@@ -1,6 +1,7 @@
 import Image from "next/image";
 import services from "@/data/services-data";
 import { raleway, open } from "@/lib/font";
+import Link from "next/link";
 
 function OurServices() {
   return (
@@ -8,9 +9,9 @@ function OurServices() {
       <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0 mb-8">
         <div className="w-full lg:w-auto">
           <div className="flex items-center gap-3 mb-3 sm:mb-4">
-            <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+            <div className="w-8 sm:w-10 lg:w-12 h-px bg-black"></div>
             <span
-              className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+              className={`text-black font-medium tracking-wide text-sm sm:text-base ${open.className}`}
             >
               Our Services
             </span>
@@ -31,9 +32,9 @@ function OurServices() {
 
       {/*our services*/}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {services.map((items, index) => (
+        {services.map((items) => (
+          <Link key={items.id} href={`/service#service-${items.id}`}>
           <div
-            key={index}
             className="flex flex-col justify-start items-start overflow-hidden group"
           >
             <div className="w-full aspect-video overflow-hidden rounded-3xl relative">
@@ -60,6 +61,7 @@ function OurServices() {
               </p>
             </div>
           </div>
+          </Link>
         ))}
       </div>
     </>

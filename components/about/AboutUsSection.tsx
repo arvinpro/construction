@@ -23,21 +23,21 @@ const teams = [
 
 function AboutUsSection() {
   return (
-    <div className="bg-white min-h-screen">
+    <div id="hero" className="bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-15">
         {/*top heading*/}
         <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0">
           <div className="w-full lg:w-auto">
             <div className="flex items-center gap-3 mb-2 sm:mb-3">
-              <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+              <div className="w-8 sm:w-10 lg:w-12 h-px bg-black"></div>
               <span
-                className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+                className={`text-black font-medium tracking-wide text-sm sm:text-base ${open.className}`}
               >
                 About Us
               </span>
             </div>
             <h1
-              className={`${raleway.className} text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
+              className={`${raleway.className} text-black text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
             >
               Who we are
             </h1>
@@ -126,12 +126,12 @@ function AboutUsSection() {
     flex items-center justify-center px-4 sm:px-6`}
           >
             <h1
-              className="text-center font-semibold leading-tight
+              className="text-center text-black font-semibold leading-tight
       text-xl sm:text-2xl md:text-3xl lg:text-4xl"
             >
               We deliver safe, sustainable, and innovative construction
               solutions.
-              <span className="block mt-2 sm:mt-4 text-gray-400">
+              <span className="block mt-2 sm:mt-4 text-gray-800">
                 Our vision is to lead Nepal’s construction sector <br /> with
                 quality and trust.
               </span>
@@ -143,11 +143,11 @@ function AboutUsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 mt-10 md:mt-20 ">
           <div className="space-y-4">
             <h1
-              className={`text-2xl sm:text-3xl md:text-4xl font-semibold ${raleway.className}`}
+              className={`text-2xl text-black sm:text-3xl md:text-4xl font-semibold ${raleway.className}`}
             >
               Message from The Director
             </h1>
-            <p className="text-xs sm:text-base font-semibold text-justify">
+            <p className="text-xs text-black/70 sm:text-base font-semibold text-justify">
               As the Director of our respected construction company, I am
               delighted to share our journey and achievements with you. With
               more than ten years of experience in the construction field, I
@@ -181,21 +181,21 @@ function AboutUsSection() {
           <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0">
             <div className="w-full lg:w-auto">
               <div className="flex items-center gap-3 mb-2 sm:mb-3">
-                <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+                <div className="w-8 sm:w-10 lg:w-12 h-px bg-black"></div>
                 <span
-                  className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+                  className={`text-black font-medium tracking-wide text-sm sm:text-base ${open.className}`}
                 >
                   About Us
                 </span>
               </div>
               <h1
-                className={`${raleway.className} text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
+                className={`${raleway.className} text-black text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
               >
                 Meet our team
               </h1>
             </div>
             <span
-              className={`w-full lg:max-w-lg text-base lg:text-base text-gray-600 ${open.className} lg:text-left `}
+              className={`w-full lg:max-w-lg text-base lg:text-base text-black ${open.className} lg:text-left `}
             >
               Quick S and A Construction provides comprehensive solutions across
               Nepal’s construction sector, combining innovation, technical

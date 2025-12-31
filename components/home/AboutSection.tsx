@@ -1,8 +1,16 @@
+"use client";
+
 import Image from "next/image";
 import { ChevronUp } from "lucide-react";
 import { raleway, open } from "@/lib/font";
+import { Link as ReactLink } from "react-scroll";
+import Link from "next/link";
 
 function AboutSection() {
+  const buttons = [
+    {label: "buildings", id: 1},
+    {label: "constructions",id:2}
+  ]
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
       <div className="relative w-full">
@@ -29,17 +37,24 @@ function AboutSection() {
             />
             <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
             <div className="absolute top-2/3 right-4 items-end lg:top-1/2 lg:-right-4 -translate-y-1/2 flex flex-col gap-2 z-10">
-              <button className="w-9 h-9 bg-yellow-400 cursor-pointer rounded-full flex items-center justify-center hover:scale-95 transition">
-                <ChevronUp className="w-5 h-5 text-black" />
+              <ReactLink to="hero" smooth={true} duration={600} offset={-130}>
+                <button
+                  className="w-9 h-9 bg-yellow-400 cursor-pointer rounded-full 
+               flex items-center justify-center 
+               hover:scale-95 transition"
+                  aria-label="Scroll to top"
+                >
+                  <ChevronUp className="w-5 h-5 text-black" />
+                </button>
+              </ReactLink>
+              {buttons.map((button)=>(
+                <Link key={button.id} href={`/service#service-${button.id}`}>
+                  <button className="px-3 py-1.5 border cursor-pointer rounded-full text-xs text-white md:text-black font-medium hover:bg-sky-500 hover:text-white transition">
+                {button.label}
               </button>
-
-              <button className="px-3 py-1.5 border cursor-pointer rounded-full text-xs text-white lg:text-black font-medium hover:bg-sky-500 hover:text-white transition">
-                buildings
-              </button>
-
-              <button className="px-3 py-1.5 border cursor-pointer rounded-full text-xs text-white lg:text-black font-medium hover:bg-sky-500 hover:text-white transition">
-                constructions
-              </button>
+                </Link>
+                 
+              ))}
             </div>
           </div>
         </div>
@@ -81,15 +96,22 @@ function AboutSection() {
             />
 
             <div className="absolute bottom-0 -left-33 flex flex-col gap-3 items-end">
-              <button className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center hover:scale-95 transition">
-                <ChevronUp className="w-7 h-7 text-black" />
-              </button>
+              <ReactLink to="hero" smooth={true} duration={600} offset={-130}>
+                <button
+                  className="w-9 h-9 bg-yellow-400 cursor-pointer rounded-full 
+               flex items-center justify-center 
+               hover:scale-95 transition"
+                  aria-label="Scroll to top"
+                >
+                  <ChevronUp className="w-5 h-5 text-black" />
+                </button>
+              </ReactLink>
 
-              <button className="px-4 py-2 border rounded-full text-sm font-medium hover:bg-sky-500 hover:text-white transition">
+              <button className="px-4 py-2 border cursor-pointer rounded-full text-sm text-black font-medium hover:bg-sky-500 hover:text-white hover:scale-95 ease-out duration-300 transition">
                 buildings
               </button>
 
-              <button className="px-4 py-2 border rounded-full text-sm font-medium hover:bg-sky-500 hover:text-white transition">
+              <button className="px-4 py-2 border cursor-pointer rounded-full text-sm text-black font-medium hover:bg-sky-500 hover:text-white hover:scale-95 ease-out duration-300 transition">
                 constructions
               </button>
             </div>
@@ -99,25 +121,25 @@ function AboutSection() {
 
       <div className="">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-12 h-px bg-gray-600"></div>
+          <div className="w-12 h-px bg-black"></div>
           <span
-            className={`text-gray-600 font-medium tracking-wide ${open.className}`}
+            className={`text-black font-medium tracking-wide ${open.className}`}
           >
             About Us
           </span>
         </div>
 
-        <div className={`${raleway.className} space-y-2 text-black`}>
+        <div className={`${raleway.className} space-y-3 text-black`}>
           <h1
-            className={`font-semibold text-xl sm:text-2xl lg:text-3xl leading-relaxed tracking-normal text-justify`}
+            className={`font-semibold text-xl sm:text-2xl lg:text-3xl leading-10 tracking-normal text-justify`}
           >
             We are architects of lasting structures and builders of trusted
             relationships.
           </h1>
           <h1
-            className={`font-semibold text-xl sm:text-2xl lg:text-3xl leading-relaxed tracking-normal text-justify`}
+            className={`font-semibold text-xl sm:text-2xl lg:text-3xl leading-10 tracking-normal text-justify`}
           >
-            Founded in 2076 B.S., Quick S and A Construction Pvt. Ltd. has grown
+            Founded in 2076 B.S, Quick S and A Construction Pvt. Ltd. has grown
             from its roots in Kathmandu into a respected name across Nepal. With
             a focus on innovation, quality, and sustainability, every project we
             deliver contributes to Nepal’s progress.

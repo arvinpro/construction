@@ -84,6 +84,7 @@ function ServiceCard({ data }: Props) {
     transition-all duration-300
     group-hover:translate-x-0 translate-x-2
   `}
+  
             >
               <svg
                 className="w-6 h-6 text-sky-800"

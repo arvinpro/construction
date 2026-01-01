@@ -16,27 +16,22 @@ const leftImages = [
 
 const rightImages = [
   { id: 1, name: "house-construction", href: "/gallery/house1.jpeg" },
-  { id: 2, name: "house-construction", href: "/gallery/img24.jpeg" },
+  { id: 2, name: "house-construction", href: "/gallery/img24.jpg" },
   { id: 3, name: "house-construction", href: "/gallery/img14.jpeg" },
   { id: 4, name: "house-construction", href: "/gallery/img15.jpeg" },
 ];
 
-const clients = [
-  {
-    id: 1,
-    name: "HALSTEAD CORPORATION",
-    date: "15 June 2023",
-  },
-  {
-    id: 2,
-    name: "EVEREST BUILDERS",
-    date: "02 August 2023",
-  },
-];
+const leftClient = {
+  name: "HALSTEAD CORPORATION",
+  date: "15 June 2023",
+};
 
-function ImageSlide({ image, index, offset = 0 }: any) {
-  const client = clients[(index + offset) % clients.length];
+const rightClient = {
+  name: "EVEREST BUILDERS",
+  date: "02 August 2023",
+};
 
+function ImageSlide({ image, client }: any) {
   return (
     <div className="relative aspect-[17/12] overflow-hidden group">
       <Image
@@ -100,9 +95,9 @@ export default function LatestWork() {
               prevEl: ".left-prev",
             }}
           >
-            {leftImages.map((img, index) => (
+            {leftImages.map((img) => (
               <SwiperSlide key={img.id}>
-                <ImageSlide image={img} index={index} offset={0} />
+                <ImageSlide image={img} client={leftClient} />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -150,9 +145,9 @@ export default function LatestWork() {
               prevEl: ".right-prev",
             }}
           >
-            {rightImages.map((img, index) => (
+            {rightImages.map((img) => (
               <SwiperSlide key={img.id}>
-                <ImageSlide image={img} index={index} offset={1} />
+                <ImageSlide image={img} client={rightClient} />
               </SwiperSlide>
             ))}
           </Swiper>

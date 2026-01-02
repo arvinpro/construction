@@ -33,7 +33,7 @@ const rightClient = {
 
 function ImageSlide({ image, client }: any) {
   return (
-    <div className="relative aspect-[17/12] overflow-hidden group">
+    <div className="relative aspect-17/12 overflow-hidden group">
       <Image
         src={image.href}
         alt={image.name}

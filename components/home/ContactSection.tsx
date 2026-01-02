@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 function ContactSection() {
   return (
     <>
-      <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-12">
+      <div className="flex flex-col lg:flex-row justify-between items-start mt-10 lg:items-center gap-8 lg:gap-12">
         <div className="hidden md:flex items-end gap-3 sm:gap-4 md:gap-6 w-full lg:w-auto">
           {/* First Image */}
           <div className="relative w-full sm:w-[280px] md:w-[350px] lg:w-[420px] xl:w-[500px] h-[200px] sm:h-[250px] md:h-[320px] lg:h-[420px] xl:h-[500px] overflow-hidden group">

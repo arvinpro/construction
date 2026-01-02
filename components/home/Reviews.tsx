@@ -101,7 +101,7 @@ export default function Reviews() {
           768: { slidesPerView: 2 },
           1024: { slidesPerView: 3 },
         }}
-        className="reviews-swiper pb-10 mt-10 md:mt-20"
+        className="reviews-swiper pb-10 mt-4 md:mt-6"
       >
         {reviews.map((review) => (
           <SwiperSlide key={review.id}>
@@ -141,7 +141,7 @@ export default function Reviews() {
       </Swiper>
 
       {/* Navigation */}
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4 -mt-10">
         <button className="swiper-button-prev-custom bg-white hover:bg-gray-100 p-3 rounded-full shadow-md transition">
           <svg
             className="w-6 h-6 text-gray-700"

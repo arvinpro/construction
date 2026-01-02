@@ -18,7 +18,6 @@ const inter = Inter({
   display: "swap",
 });
 
-
 export default function Footer() {
   const links = [
     { name: "About Us", href: "/about" },
@@ -71,37 +70,38 @@ export default function Footer() {
           </div>
 
           {/* Google Map Location */}
-<div className="flex flex-col justify-center">
-  <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">
-    Our Location
-  </h3>
+          <div className="flex flex-col justify-center">
+            <h3 className="text-2xl lg:text-3xl font-bold text-white mb-6">
+              Our Location
+            </h3>
 
-  <div className="w-full 
+            <div
+              className="w-full 
                   h-[220px] 
-                  overflow-hidden rounded-xl shadow-lg border border-gray-700 bg-gray-700">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1123456789!2d85.2423342463699!3d27.72600605468447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb191a11b0b515%3A0x8aa1d3f8e8e8e8e8!2sNagarjun-07%2C%20Kathmandu%2C%20Nepal!5e0!3m2!1sen!2snp!4v1700000000000"
-      className="w-full h-full"
-      style={{ border: 0 }}
-      loading="lazy"
-      referrerPolicy="no-referrer-when-downgrade"
-      title="Quick S & A Construction Location"
-    />
-  </div>
+                  overflow-hidden rounded-xl shadow-lg border border-gray-700 bg-gray-700"
+            >
+              <iframe
+                src="https://www.google.com/maps?q=27.72600605468447,85.2423342463699&z=16&output=embed"
+                className="w-full h-full"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Quick S & A Construction Location"
+              />
+            </div>
 
-  <p className="mt-4 text-sm text-gray-400">
-    Nagarjun-07, Kathmandu, Nepal
-  </p>
+            <p className="mt-4 text-sm text-gray-400">
+              Nagarjun-07, Kathmandu, Nepal
+            </p>
 
-  <Link
-    href="https://maps.app.goo.gl/VYCXag5TdMPHTqKq9"
-    target="_blank"
-    className="mt-2 inline-flex items-center gap-1 text-sm text-blue-400 hover:text-blue-300 transition"
-  >
-    View on Google Maps →
-  </Link>
-</div>
-
+            <Link
+              href="https://maps.app.goo.gl/VYCXag5TdMPHTqKq9"
+              target="_blank"
+              className="mt-2 inline-flex items-center gap-1 text-sm text-blue-400 hover:text-blue-300 transition"
+            >
+              View on Google Maps →
+            </Link>
+          </div>
         </div>
 
         {/* Links, Services & Contact */}
@@ -179,7 +179,8 @@ export default function Footer() {
           className={`pt-8 flex flex-col sm:flex-row justify-between items-center gap-6 text-sm lg:text-base ${inter.className}`}
         >
           <p className="text-gray-400 text-center sm:text-left">
-            Copyright © Quick S & A Construction Pvt Ltd 2025. All rights reserved.
+            Copyright © Quick S & A Construction Pvt Ltd 2025. All rights
+            reserved.
           </p>
           <div className="flex items-center gap-6 text-gray-400">
             <a href="#" className="hover:text-white transition-colors">

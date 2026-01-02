@@ -97,12 +97,12 @@ function AboutSection() {
             <div className="absolute bottom-0 -left-33 flex flex-col gap-3 items-end">
               <ReactLink to="hero" smooth={true} duration={600} offset={-130}>
                 <button
-                  className="w-9 h-9 bg-yellow-400 cursor-pointer rounded-full 
+                  className="w-9 h-9 bg-yellow-500 cursor-pointer rounded-full 
                flex items-center justify-center 
                hover:scale-95 transition"
                   aria-label="Scroll to top"
                 >
-                  <ChevronUp className="w-5 h-5 text-black" />
+                  <ChevronUp className="w-5 h-5 text-sky-800" />
                 </button>
               </ReactLink>
 

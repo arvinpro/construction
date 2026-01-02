@@ -176,21 +176,12 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div
-          className={`pt-8 flex flex-col sm:flex-row justify-between items-center gap-6 text-sm lg:text-base ${inter.className}`}
+          className={`pt-8 flex justify-between md:justify-center items-center gap-6 text-sm lg:text-base ${inter.className}`}
         >
           <p className="text-gray-400 text-center sm:text-left">
             Copyright © Quick S & A Construction Pvt Ltd 2025. All rights
             reserved.
           </p>
-          <div className="flex items-center gap-6 text-gray-400">
-            <a href="#" className="hover:text-white transition-colors">
-              Privacy Policy
-            </a>
-            <span className="hidden sm:inline">|</span>
-            <a href="#" className="hover:text-white transition-colors">
-              Terms & Conditions
-            </a>
-          </div>
         </div>
       </div>
     </footer>

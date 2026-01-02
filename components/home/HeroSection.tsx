@@ -102,9 +102,9 @@ export default function HeroSection() {
                 project.
               </p>
 
-              <button className="absolute cursor-pointer bottom-4 sm:bottom-6 right-4 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 bg-yellow-400 rounded-full flex items-center justify-center hover:scale-110 transition">
+              <button className="absolute cursor-pointer bottom-4 sm:bottom-6 right-4 sm:right-6 w-12 h-12 sm:w-14 sm:h-14 bg-yellow-500 rounded-full flex items-center justify-center hover:scale-110 transition">
                 <Link href="/service">
-                  <ArrowUpRight className="w-8 h-8 sm:w-10 sm:h-10 text-black" />
+                  <ArrowUpRight className="w-8 h-8 sm:w-10 sm:h-10 text-sky-800" />
                 </Link>
               </button>
             </div>

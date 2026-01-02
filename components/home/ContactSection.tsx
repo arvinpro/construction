@@ -23,8 +23,8 @@ function ContactSection() {
               className="object-cover group-hover:scale-105 transition-transform ease-out duration-500"
             />
             <Link to="hero" smooth={true} duration={600} offset={-130}>
-              <button className="absolute cursor-pointer bottom-3 sm:bottom-4 md:bottom-6 left-3 sm:left-4 md:left-6 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-yellow-400 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                <ArrowUpRight className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-black" />
+              <button className="absolute cursor-pointer bottom-3 sm:bottom-4 md:bottom-6 left-3 sm:left-4 md:left-6 w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-yellow-500 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300">
+                <ArrowUpRight className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-10 lg:h-10 text-sky-800" />
               </button>
             </Link>
           </div>

@@ -88,7 +88,7 @@ function AboutUsSection() {
             </div>
           </div>
           <div className="mt-8">
-            <p className="font-semibold text-justify">
+            <p className={`font-normal leading-relaxed text-justify ${open.className}`}>
               Quick S and A Construction Pvt. Ltd., established in 2076 B.S., is
               a professional construction company headquartered in Kathmandu,
               Nepal. Since its inception, the company has been dedicated to

@@ -50,11 +50,11 @@ function OurServices() {
         {/*middle text content*/}
         <div className="flex flex-col justify-center items-start lg:items-center gap-4 md:gap-6 mt-14 md:mt-25">
           <h1
-            className={`text-2xl sm:text-4xl lg:text-5xl font-semibold uppercase ${raleway.className}`}
+            className={`text-2xl text-black sm:text-4xl lg:text-5xl font-semibold uppercase ${raleway.className}`}
           >
             What We Build, Defines Us
           </h1>
-          <p className="font-semibold">
+          <p className="font-semibold text-slate-700">
             From residential homes to national infrastructure, we deliver
             projects that combine innovation, safety, and lasting value.
           </p>

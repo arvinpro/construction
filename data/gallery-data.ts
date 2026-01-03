@@ -48,6 +48,13 @@ export const gallery2: GalleryDataTypes[] = [
   { id: 23, name: "gallery1", link: "/gallery/img23.jpg" },
   { id: 26, name: "gallery1", link: "/gallery/img26.jpg" },
   { id: 27, name: "gallery1", link: "/gallery/img27.jpg" },
+
+  { id: 28, name: "gallery01", link: "/gallery/bridge2.jpeg" },
+  { id: 29, name: "gallery11", link: "/gallery/build4.jpeg" },
+  { id: 30, name: "gallery21", link: "/gallery/road8.jpeg" },
+  { id: 31, name: "gallery31", link: "/gallery/road9.jpeg" },
+  { id: 32, name: "gallery41", link: "/gallery/img00.jpeg" },
+  { id: 33, name: "gallery51", link: "/gallery/img01.jpeg" },
 ];
 
 export default gallery;

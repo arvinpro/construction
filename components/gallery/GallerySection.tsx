@@ -1,8 +1,6 @@
 import { raleway, open } from "@/lib/font";
 import { gallery2 } from "@/data/gallery-data";
 import GalleryGrid from "./GalleryGrid";
-import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import ContactSection from "../home/ContactSection";
 
 

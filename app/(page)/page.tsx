@@ -6,6 +6,12 @@ import LatestWork from "@/components/home/LatestWork";
 import OurGallery from "@/components/home/OurGallery";
 import ContactSection from "@/components/home/ContactSection";
 import Reviews from "@/components/home/Reviews";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Trusted construction company delivering quality projects in Nepal",
+};
 
 export default function Home() {
   return (

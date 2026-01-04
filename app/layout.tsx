@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
+
+  metadataBase: new URL("https://construction-one-tawny.vercel.app"),
+
   title: {
     default: "Construction Company Nepal",
     template: "%s | Construction Company Nepal",
@@ -14,7 +17,7 @@ export const metadata: Metadata = {
       "Trusted construction company delivering quality projects across Nepal.",
     images: [
        {
-      url: "https://construction-one-tawny.vercel.app/og/og-default.png",
+      url: "/og/og-default.png",
       width: 1200,
       height: 630,
       alt: "S&A Construction Pvt Ltd",
@@ -26,6 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "S&A Construction Company Nepal",
     description: "Professional construction and engineering services in Nepal.",
+    images: ["/og/og-default.png"],
   },
 };
 

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "S&A Construction Company Nepal",
     description:
       "Trusted construction company delivering quality projects across Nepal.",
-    images: ["/myquicklogo.png"],
+    images: ["/og/og-default.png"],
     type: "website",
   },
   twitter: {

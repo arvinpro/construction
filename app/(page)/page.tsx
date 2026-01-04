@@ -11,6 +11,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Home",
   description: "Trusted construction company delivering quality projects in Nepal",
+   openGraph: {
+    title: "S & A Construction Company Nepal",
+    description:
+      "Trusted residential and commercial construction services across Nepal.",
+    images: ["/og/og-home.png"],
+  },
 };
 
 export default function Home() {

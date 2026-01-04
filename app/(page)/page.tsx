@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     title: "S & A Construction Company Nepal",
     description:
       "Trusted residential and commercial construction services across Nepal.",
-    images: ["/og/og-home.png"],
+    images: ["/og/og-default.png"],
   },
 };
 

@@ -163,7 +163,7 @@ function AboutUsSection() {
             </p>
           </div>
 
-          <div className="w-full lg:w-1/2 relative h-[280px] sm:h-[350px] md:h-[420px] overflow-hidden rounded-3xl order-1 lg:order-2">
+          <div className="w-full lg:w-1/2 relative h-[330px] sm:h-[400px] md:h-[470px] overflow-hidden rounded-3xl order-1 lg:order-2">
             <Image
               src="/director.jpeg"
               alt="Director"

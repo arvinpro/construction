@@ -88,7 +88,9 @@ function AboutUsSection() {
             </div>
           </div>
           <div className="mt-8">
-            <p className={`font-normal leading-relaxed text-justify ${open.className}`}>
+            <p
+              className={`font-normal leading-relaxed text-justify ${open.className}`}
+            >
               Quick S and A Construction Pvt. Ltd., established in 2076 B.S., is
               a professional construction company headquartered in Kathmandu,
               Nepal. Since its inception, the company has been dedicated to
@@ -140,14 +142,15 @@ function AboutUsSection() {
         </div>
 
         {/*message from director*/}
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 mt-10 md:mt-20 ">
-          <div className="space-y-4">
+        <div className="flex flex-col lg:flex-row items-center gap-8 mt-10 md:mt-20">
+          <div className="w-full lg:w-1/2 space-y-4 order-2 lg:order-1">
             <h1
-              className={`text-2xl text-black sm:text-3xl md:text-4xl font-semibold ${raleway.className}`}
+              className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-black ${raleway.className}`}
             >
               Message from The Director
             </h1>
-            <p className="text-xs text-black/70 sm:text-base font-semibold text-justify">
+
+            <p className="text-xs sm:text-base text-black/70 font-semibold text-justify">
               As the Director of our respected construction company, I am
               delighted to share our journey and achievements with you. With
               more than ten years of experience in the construction field, I
@@ -160,15 +163,12 @@ function AboutUsSection() {
             </p>
           </div>
 
-          <div className="relative overflow-hidden aspect-video rounded-4xl group">
-            <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
-              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
-            </div>
+          <div className="w-full lg:w-1/2 relative h-[280px] sm:h-[350px] md:h-[420px] overflow-hidden rounded-3xl order-1 lg:order-2">
             <Image
-              src={"/johnny.jpg"}
+              src="/director.jpeg"
               alt="Director"
               fill
-              className="object-cover transition-transform ease-out duration-300 group-hover:scale-105"
+              className="object-cover rounded-3xl"
             />
           </div>
         </div>

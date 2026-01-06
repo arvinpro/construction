@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import Achivements from "./Achivements";
 import WearePage from "./WearePage";
 import { raleway, open } from "@/lib/font";
@@ -142,34 +141,70 @@ function AboutUsSection() {
         </div>
 
         {/*message from director*/}
-        <div className="flex flex-col lg:flex-row items-center gap-8 mt-10 md:mt-20">
-          <div className="w-full lg:w-1/2 space-y-4 order-2 lg:order-1">
-            <h1
-              className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-black ${raleway.className}`}
+        <div className="mt-10 md:mt-20">
+          <div
+            className="
+      flex
+      flex-col
+      lg:flex-row
+      items-center
+      justify-center
+      gap-10
+      lg:gap-16
+    "
+          >
+            {/* TEXT SECTION */}
+            <div
+              className="
+        w-full
+        lg:flex-[2]
+        space-y-4
+        order-2 lg:order-1
+        max-w-none
+      "
             >
-              Message from The Director
-            </h1>
+              <h1
+                className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-black ${raleway.className}`}
+              >
+                Message from The Director
+              </h1>
 
-            <p className="text-xs sm:text-base text-black/70 font-semibold text-justify">
-              As the Director of our respected construction company, I am
-              delighted to share our journey and achievements with you. With
-              more than ten years of experience in the construction field, I
-              have had the honor of leading a team committed to excellence in
-              every project we take on. Our dedication to innovation and quality
-              guarantees that each project not only meets but surpasses our
-              clients' expectations. We are excited to continue building a
-              future characterized by excellence and innovation. Thank you for
-              your trust and support.
-            </p>
-          </div>
+              <p className={`${open.className} text-sm sm:text-base md:text-lg text-black/70 text-justify"`}>
+                As the Director of our respected construction company, I am
+                delighted to share our journey and achievements with you. With
+                more than ten years of experience in the construction field, I
+                have had the honor of leading a team committed to excellence in
+                every project we take on. Our dedication to innovation and
+                quality guarantees that each project not only meets but
+                surpasses our clients' expectations. We are excited to continue
+                building a future characterized by excellence and innovation.
+                Thank you for your trust and support.
+              </p>
+            </div>
 
-          <div className="w-full lg:w-1/2 relative h-[330px] sm:h-[400px] md:h-[470px] overflow-hidden rounded-3xl order-1 lg:order-2">
-            <Image
-              src="/director.jpeg"
-              alt="Director"
-              fill
-              className="object-cover rounded-3xl"
-            />
+            {/* IMAGE SECTION */}
+            <div
+              className="
+        w-full
+        sm:w-4/5
+        md:w-2/3
+        lg:flex-[1]
+        xl:max-w-[380px]
+        order-1 lg:order-2
+        mx-auto lg:mx-0
+        lg:ml-auto
+        overflow-hidden
+        rounded-3xl
+      "
+            >
+              <Image
+                src="/director.jpeg"
+                alt="Director"
+                width={1200}
+                height={1600}
+                className="w-full h-auto rounded-3xl"
+              />
+            </div>
           </div>
         </div>
 

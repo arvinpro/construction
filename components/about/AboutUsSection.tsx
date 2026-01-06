@@ -169,7 +169,9 @@ function AboutUsSection() {
                 Message from The Director
               </h1>
 
-              <p className={`${open.className} text-sm sm:text-base md:text-lg text-black/70 text-justify"`}>
+              <p
+                className={`${open.className} text-sm sm:text-base md:text-lg text-black/70 text-justify"`}
+              >
                 As the Director of our respected construction company, I am
                 delighted to share our journey and achievements with you. With
                 more than ten years of experience in the construction field, I
@@ -195,14 +197,19 @@ function AboutUsSection() {
         lg:ml-auto
         overflow-hidden
         rounded-3xl
+        group
+        relative
       "
             >
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none z-10">
+                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+              </div>
               <Image
                 src="/director.jpeg"
                 alt="Director"
                 width={1200}
                 height={1600}
-                className="w-full h-auto rounded-3xl"
+                className="w-full h-auto rounded-3xl group-hover:scale-105 transition-transform duration-500"
               />
             </div>
           </div>

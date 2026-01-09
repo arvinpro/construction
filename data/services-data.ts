@@ -5,7 +5,7 @@
     name: "Building Construction",
     description:
       "Residential and commercial buildings constructed with precision, quality materials, and modern techniques.",
-    image: "/servicepage/building.jpeg",
+    image: "/assets/img (47).jpeg",
   },
 
   {
@@ -13,7 +13,7 @@
     name: "Road Construction",
     description:
       "Durable highways and local roads built to connect cities and communities.",
-    image: "/servicepage/road.jpeg",
+    image: "/assets/img (68).jpeg",
   },
 
   {

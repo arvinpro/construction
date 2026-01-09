@@ -59,7 +59,7 @@ function AboutUsSection() {
             </div>
 
             <Image
-              src={"/industry.jpg"}
+              src={"/design/design (1).jpg"}
               alt="industry"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-105"

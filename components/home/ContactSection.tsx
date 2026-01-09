@@ -16,7 +16,7 @@ function ContactSection() {
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
             </div>
             <Image
-              src={"/building1.jpeg"}
+              src={"/design/design (9).jpeg"}
               alt="building1"
               fill
               priority
@@ -35,7 +35,7 @@ function ContactSection() {
               <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
             </div>
             <Image
-              src={"/building2.jpeg"}
+              src={"/design/design (15).jpeg"}
               alt="building2"
               fill
               priority

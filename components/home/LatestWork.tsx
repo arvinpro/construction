@@ -8,17 +8,17 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 const leftImages = [
-  { id: 1, name: "road-construction", href: "/gallery/road8.jpeg" },
-  { id: 2, name: "road-construction", href: "/gallery/road9.jpeg" },
-  { id: 3, name: "road-construction", href: "/gallery/road4.jpeg" },
-  { id: 4, name: "road-construction", href: "/gallery/road5.jpeg" },
+  { id: 1, name: "road-construction", href: "/assets/img (65).jpeg" },
+  { id: 2, name: "road-construction", href: "/assets/img (66).jpeg" },
+  { id: 3, name: "road-construction", href: "/assets/img (67).jpeg" },
+  { id: 4, name: "road-construction", href: "/assets/img (68).jpeg" },
 ];
 
 const rightImages = [
-  { id: 1, name: "house-construction", href: "/gallery/house1.jpeg" },
-  { id: 2, name: "house-construction", href: "/gallery/img24.jpg" },
-  { id: 3, name: "house-construction", href: "/gallery/img14.jpeg" },
-  { id: 4, name: "house-construction", href: "/gallery/img15.jpeg" },
+  { id: 1, name: "house-construction", href: "/assets/img (75).jpeg" },
+  { id: 2, name: "house-construction", href: "/assets/img (76).jpeg" },
+  { id: 3, name: "house-construction", href: "/assets/img (77).jpeg" },
+  { id: 4, name: "house-construction", href: "/assets/img (30).jpeg" },
 ];
 
 const leftClient = {

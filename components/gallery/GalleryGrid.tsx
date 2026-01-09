@@ -8,7 +8,7 @@ interface Props {
   images: GalleryDataTypes[];
 }
 
-const ITEMS_LOADS = 18;
+const ITEMS_LOADS = 42;
 
 function GalleryGrid({ images }: Props) {
   const [visibleCount, setVisibleCount] = useState(ITEMS_LOADS);

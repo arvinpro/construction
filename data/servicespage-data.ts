@@ -14,11 +14,11 @@ export const servicesData: ServiceData[] = [
     description:
       "We specialize in constructing residential and commercial buildings that reflect modern design principles while ensuring durability and functionality. Our projects range from apartments and office towers to multi-use complexes, all delivered with strict quality control and attention to detail.",
     image:[
-      "/gallery/img11.jpeg",
-      "/gallery/build1.jpeg",
-      "/gallery/build2.jpeg",
-      "/gallery/build3.jpeg",
-      "/gallery/build4.jpeg",
+      "/assets/img (38).jpeg",
+      "/assets/img (39).jpeg",
+      "/assets/img (75).jpeg",
+      "/assets/img (76).jpeg",
+      "/assets/img (77).jpeg",
     ],   
     features: [
       "Contemporary residential and commercial architecture",
@@ -34,11 +34,12 @@ export const servicesData: ServiceData[] = [
     description:
       "Roads are the backbone of national development. We deliver high-quality highways and local roads that connect cities, towns, and rural areas, ensuring safe and smooth transportation. Using advanced equipment and durable materials, our roads stand the test of time and weather.",
     image:[
-       "/servicepage/road.jpeg",
-       "/gallery/road2.jpeg",
-       "/gallery/road3.jpeg",
-       "/gallery/road4.jpeg",
-       "/gallery/road5.jpeg",
+       "/assets/img (60).jpeg",
+       "/assets/img (66).jpeg",
+       "/assets/img (62).jpeg",
+       "/assets/img (63).jpeg",
+       "/assets/img (64).jpeg",
+       "/assets/img (67).jpeg",
       ],
      
     features: [
@@ -53,10 +54,10 @@ export const servicesData: ServiceData[] = [
     id: 3,
     title: "Bridge Construction",
     image:[
-      "/servicepage/bridge.jpg",
-      "/gallery/bridge1.jpeg",
-      "/gallery/bridge2.jpeg",
-      "/gallery/bridge3.jpeg",
+     "/assets/bridge (1).jpg",
+      "/assets/bridge (2).jpg",
+      "/assets/bridge (3).jpg",
+      "/assets/bridge (4).jpg",
     ],
     description:
       "We design and build strong bridges that connect people and enable commerce. Whether over rivers, valleys, or rugged terrains, our bridge projects embody safety, structural integrity, and engineering excellence.",
@@ -74,10 +75,10 @@ export const servicesData: ServiceData[] = [
     description:
       "A home should be a reflection of its owner’s lifestyle and dreams. We bring those visions to life with customized residential projects that combine modern aesthetics with practical layouts. Every detail is tailored to ensure comfort, safety, and long-lasting value.",
     image:[
-      "/servicepage/private.jpeg",
-      "/gallery/img10.jpeg",
-      "/gallery/img14.jpeg",
-      "/gallery/img15.jpeg",
+      "/assets/img (32).jpeg",
+      "/assets/img (34).jpeg",
+      "/assets/img (35).jpeg",
+      "/assets/img (36).jpeg",
     ],
      
     features: [
@@ -94,7 +95,7 @@ export const servicesData: ServiceData[] = [
     description:
       "We deliver luxury resort and villa projects in Nepal’s most scenic destinations. Our designs blend natural landscapes with contemporary architecture, creating spaces that are not only visually stunning but also functional for leisure and tourism.",
     image:[
-      "/servicepage/resort.jpg",
+      "/assets/resort.jpg",
       "/gallery/img20.jpg",
       "/gallery/img21.jpg",
     ],
@@ -112,9 +113,11 @@ export const servicesData: ServiceData[] = [
     description:
       "Our commercial construction services focus on creating efficient, modern, and adaptable spaces for businesses to thrive. From shopping centers and office blocks to business hubs, we provide infrastructure that supports economic growth and modern lifestyles.",
     image: [
-      "/servicepage/commercial.jpeg",
-      "/homepage/home2.jpeg",
-      "/homepage/home3.jpeg"
+      "/assets/img (12).jpeg",
+      "/assets/img (13).jpeg",
+      "/assets/img (14).jpeg",
+      "/assets/img (17).jpeg",
+      "/assets/img (19).jpeg",
     ],
     features: [
       "Commercial hubs for offices and retail spaces",
@@ -130,10 +133,10 @@ export const servicesData: ServiceData[] = [
     description:
       "Nepal’s future lies in clean, renewable energy — and we contribute through specialized hydropower construction. From dam and tunnel excavation to powerhouse infrastructure, our expertise covers every aspect of hydropower projects, helping to secure sustainable energy for the nation.",
     image: [
-      "/servicepage/hydropower.jpg",
-      "/gallery/hydro1.jpg",
-       "/gallery/hydro2.jpg",
-        "/gallery/hydro3.jpg",
+      "/assets/hydro (1).jpg",
+      "/assets/hydro (2).jpg",
+      "/assets/hydro (3).jpg",
+      "/assets/hydro (4).jpg",
     ],
     features: [
       "Dam and tunnel construction",

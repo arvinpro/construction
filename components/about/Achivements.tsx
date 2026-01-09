@@ -39,18 +39,16 @@ function Achivements() {
         </h1>
       </div>
 
-      {/* RIGHT IMAGES + SVG */}
       <div className="relative w-full max-w-2xl mx-auto py-10 sm:py-16">
-        {/* IMAGE GRID */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center relative z-10">
           
           {/* TOP IMAGE */}
-          <div className="relative aspect-video overflow-hidden rounded-2xl">
+          <div className="relative aspect-22/14 overflow-hidden rounded-2xl group">
             <Image
-              src="/building1.jpeg"
+              src="/design/design (4).jpeg"
               alt="Building"
               fill
-              className="object-cover"
+              className="object-cover group-hover:scale-105 transition-transform ease-out duration-500"
             />
           </div>
 
@@ -59,12 +57,12 @@ function Achivements() {
           <div className="hidden md:block" />
 
           {/* BOTTOM IMAGE */}
-          <div className="relative aspect-video overflow-hidden rounded-2xl">
+          <div className="relative aspect-22/14 overflow-hidden rounded-2xl group">
             <Image
-              src="/building2.jpeg"
+              src="/design/design (3).jpeg"
               alt="Building"
               fill
-              className="object-cover"
+              className="object-cover group-hover:scale-105 transition-transform ease-out duration-500"
             />
           </div>
         </div>

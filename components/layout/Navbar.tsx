@@ -57,7 +57,7 @@ export default function Navbar() {
           <Link href={"/"}>
             <div className="flex flex-col items-center leading-none mb-6">
               <Image
-                src="/myquicklogo.png"
+                src="/logo/myquicklogo.png"
                 alt="Logo"
                 width={80}
                 height={80}

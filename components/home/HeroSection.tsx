@@ -33,7 +33,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               </div>
               <img
-                src="/homepage/home2.jpeg"
+                src="/design/design (13).jpeg"
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/30 to-transparent" />
@@ -56,7 +56,9 @@ export default function HeroSection() {
                   <span
                     className="px-4 py-2 border rounded-full text-xs sm:text-sm font-medium cursor-pointer
                    hover:scale-95 transition duration-300
-                   hover:bg-sky-500 hover:text-white"
+                   hover:bg-sky-500 hover:text-white
+                   inline-block
+                   "
                   >
                     {service.label}
                   </span>
@@ -72,7 +74,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               </div>
               <img
-                src="homepage/home3.jpeg"
+                src="/design/design (12).jpeg"
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
             </div>
@@ -85,7 +87,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white to-transparent opacity-30 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               </div>
               <img
-                src="homepage/home1.jpeg"
+                src="/assets/img (38).jpeg"
                 className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/40 to-blue-900/40" />

@@ -10,14 +10,22 @@ import Image from 'next/image';
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
 
 const images = [
-  "/gallery/img20.jpg",
-  "/gallery/img21.jpg",
-  "/gallery/img22.jpg",
-  "/gallery/img23.jpg",
-  "/gallery/img24.jpg",
-  "/gallery/img25.jpg",
-  "/gallery/img26.jpg",
-  "/gallery/img27.jpg",
+  "/assets/fb (1).jpg",
+  "/assets/fb (2).jpg",
+  "/assets/fb (3).jpg",
+  "/assets/fb (4).jpg",
+  "/assets/fb (5).jpg",
+  "/assets/fb (6).jpg",
+  "/assets/fb (7).jpg",
+  "/assets/fb (8).jpg",
+  "/assets/img (85).jpeg",
+  "/assets/img (80).jpeg",
+  "/assets/img (64).jpeg",
+  "/assets/img (74).jpeg",
+  "/assets/img (61).jpeg",
+  "/assets/img (62).jpeg",
+  "/assets/img (30).jpeg",
+  "/assets/img (55).jpeg",
 ];
 
 export default function GallerySwiper() {

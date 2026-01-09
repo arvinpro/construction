@@ -18,7 +18,7 @@ function AboutSection() {
           {/* Image 1 */}
           <div className="relative h-[220px] sm:h-[260px] rounded-xl overflow-hidden group">
             <Image
-              src="/aboutpage/img1.jpeg"
+              src="/design/design (14).jpeg"
               alt="Building"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw"
@@ -29,7 +29,7 @@ function AboutSection() {
           {/* Image 2 */}
           <div className="relative h-[220px] sm:h-[260px] rounded-xl overflow-hidden group">
             <Image
-              src="/aboutpage/img2.jpeg"
+              src="/assets/img (27).jpeg"
               alt="Building"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw"
@@ -63,7 +63,7 @@ function AboutSection() {
           {/* Image 1 */}
           <div className="absolute top-14 left-0 h-57 w-75 group">
             <Image
-              src="/aboutpage/img1.jpeg"
+              src="/design/design (14).jpeg"
               alt="Building"
               fill
               sizes="(min-width: 1024px) 300px"
@@ -87,7 +87,7 @@ function AboutSection() {
           {/* Image 2 */}
           <div className="absolute bottom-0 right-0 h-76 w-105 group">
             <Image
-              src="/aboutpage/img2.jpeg"
+              src="/assets/img (27).jpeg"
               alt="Building"
               fill
               sizes="(min-width: 1024px) 420px"

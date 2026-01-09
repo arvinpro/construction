@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <section className="bg-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-20">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-20 md:space-y-25">
       <HeroSection />
       <AboutSection />
       <LogoSection />

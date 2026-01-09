@@ -8,7 +8,7 @@ export const metadata = {
     title: "About S & A Construction Company Nepal",
     description:
       "Discover our journey, expertise, and commitment to quality construction.",
-    images: ["/og/og-about.png"],
+    images: ["/og/about.jpg"],
   },
 };
 

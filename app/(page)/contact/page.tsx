@@ -10,7 +10,7 @@ export const metadata = {
     title: "Contact S & A Construction Company Nepal",
     description:
       "Reach out to us for trusted construction services across Nepal.",
-    images: ["/og/og-contact.png"],
+    images: ["/og/contact.jpg"],
   },
 };
 

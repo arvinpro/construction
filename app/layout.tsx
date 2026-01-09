@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Trusted construction company delivering quality projects across Nepal.",
     images: [
        {
-      url: "https://construction-one-tawny.vercel.app/og/og-default.png",
+      url: "https://construction-one-tawny.vercel.app/og/home.jpg",
       width: 1200,
       height: 630,
       alt: "S&A Construction Pvt Ltd",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "S&A Construction Company Nepal",
     description: "Professional construction and engineering services in Nepal.",
-    images: ["https://construction-one-tawny.vercel.app/og/og-default.png"],
+    images: ["https://construction-one-tawny.vercel.app/og/home.jpg"],
   },
 };
 

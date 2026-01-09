@@ -8,7 +8,7 @@ export const metadata = {
     title: "Construction Project Gallery",
     description:
       "Browse completed projects by S & A Construction Company Nepal.",
-    images: ["/og/og-gallery.png"],
+    images: ["/og/gallery.jpg"],
   },
 };
 

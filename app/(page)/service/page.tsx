@@ -10,7 +10,7 @@ export const metadata = {
     title: "Construction Services in Nepal",
     description:
       "Explore residential, commercial, and infrastructure construction services.",
-    images: ["/og/og-services.png"],
+    images: ["/og/services.jpg"],
   },
 };
 

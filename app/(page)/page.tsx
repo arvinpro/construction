@@ -15,14 +15,14 @@ export const metadata: Metadata = {
     title: "S & A Construction Company Nepal",
     description:
       "Trusted residential and commercial construction services across Nepal.",
-    images: ["/og/og-default.png"],
+    images: ["/og/home.jpg"],
   },
 };
 
 export default function Home() {
   return (
     <section className="bg-white">
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-20 md:space-y-25">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 space-y-20">
       <HeroSection />
       <AboutSection />
       <LogoSection />

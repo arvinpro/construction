@@ -21,7 +21,7 @@
     name: "Bridge Construction",
     description:
       "Strong, safe structures designed to link people and places securely.",
-    image: "/servicepage/bridge.jpg",
+    image: "/assets/bridge (2).jpg",
   },
 
   {
@@ -29,14 +29,14 @@
     name: "Private Residences",
     description:
       "Custom dream homes tailored to each client’s unique vision and lifestyle.",
-    image: "/servicepage/private.jpeg",
+    image: "/assets/img (13).jpeg",
   },
   {
     id: 5,
     name: "Resorts & Villas",
     description:
       "Luxury projects with modern design, premium finishes, and scenic integration.",
-    image: "/servicepage/resort.jpg",
+    image: "/assets/resort.jpg",
   },
 
   {
@@ -44,7 +44,7 @@
     name: "Commercial Complexes",
     description:
       "Offices, shopping centers, and business hubs that drive growth and efficiency.",
-    image: "/servicepage/commercial.jpeg",
+    image: "/assets/img (34).jpeg",
   },
 ];
 

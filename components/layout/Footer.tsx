@@ -46,7 +46,7 @@ export default function Footer() {
             <Link href={"/"} className="block">
               <div className="flex flex-col items-center text-center leading-none">
                 <Image
-                  src="/myquicklogo.png"
+                  src="/logo/myquicklogo.png"
                   alt="Quick S & A Construction Logo"
                   width={80}
                   height={80}

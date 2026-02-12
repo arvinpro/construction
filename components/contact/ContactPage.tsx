@@ -112,21 +112,21 @@ function ContactPage() {
         <div className="flex flex-col justify-between items-start gap-6 lg:gap-2">
           <div className="w-full lg:w-auto">
             <div className="flex items-center gap-3 mb-2 sm:mb-3">
-              <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+              <div className="w-8 sm:w-10 lg:w-12 h-px bg-primary"></div>
               <span
-                className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+                className={`text-primary font-medium tracking-wide text-sm sm:text-base ${open.className}`}
               >
                 Contact Us
               </span>
             </div>
             <h1
-              className={`${raleway.className} text-2xl text-black sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
+              className={`${raleway.className} text-2xl text-primary sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
             >
               Let's keep in touch
             </h1>
           </div>
           <span
-            className={`max-w-full text-base lg:text-base text-black font-semibold ${open.className} lg:text-left `}
+            className={`max-w-full text-base lg:text-base text-primary font-semibold ${open.className} lg:text-left `}
           >
             We're here to answer your questions, discuss on you new project, and
             help you with the best services.
@@ -137,7 +137,7 @@ function ContactPage() {
           <div className="bg-gray-50 rounded-xl max-w-xl">
             <div className="flex flex-col gap-6 px-6 py-6">
               <div className="space-y-2">
-                <h1 className="text-3xl text-black">
+                <h1 className="text-3xl text-primary">
                   Let's Talk About Your Projects
                 </h1>
                 <p className="text-gray-900">
@@ -275,7 +275,7 @@ function ContactPage() {
           <div className={`px-6 py-6 ${raleway.className}`}>
             <div className="grid grid-cols-1">
               <div>
-                <p className="text-sm text-gray-600 mb-2">Contact Info</p>
+                <p className="text-sm text-gray-900 mb-2">Contact Info</p>
                 <h2 className="text-3xl font-semibold text-gray-900 mb-4">
                   Prefer a Direct Approach?
                 </h2>

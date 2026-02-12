@@ -68,7 +68,7 @@ function ImageSlide({ image, client }: any) {
 export default function LatestWork() {
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-between gap-6 mb-8">
+      <div className="flex flex-col md:flex-row justify-between text-primary gap-6 mb-8">
         <div>
           <span className={`text-sm ${open.className}`}>Our Services</span>
           <h1

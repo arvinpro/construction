@@ -36,16 +36,16 @@ export default function WearePage() {
       <div className="flex flex-col justify-start items-start lg:items-end py-8 md:py-0">
         <div className="max-w-lg">
           <div className="flex items-center gap-3 mb-2 sm:mb-3">
-            <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+            <div className="w-8 sm:w-10 lg:w-12 h-px bg-primary"></div>
             <span
-              className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+              className={`text-primary font-medium tracking-wide text-sm sm:text-base ${open.className}`}
             >
               About Us
             </span>
           </div>
 
           <h2
-            className={`text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-8 md:mb-12 ${raleway.className}`}
+            className={`text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-8 md:mb-12 ${raleway.className}`}
           >
             WHO WE ARE
           </h2>
@@ -58,7 +58,7 @@ export default function WearePage() {
                   01
                 </span>
               </div>
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+              <p className="text-primary text-base sm:text-lg leading-relaxed">
                 Decades of combined experience in delivering residential,
                 commercial, infrastructure, and hydropower projects across
                 Nepal.
@@ -72,7 +72,7 @@ export default function WearePage() {
                   02
                 </span>
               </div>
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+              <p className="text-primary text-base sm:text-lg leading-relaxed">
                 Commitment to using modern technology, advanced engineering
                 practices, and high-grade materials for lasting results.
               </p>
@@ -85,7 +85,7 @@ export default function WearePage() {
                   03
                 </span>
               </div>
-              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+              <p className="text-primary text-base sm:text-lg leading-relaxed">
                 Efficient planning and execution ensure projects are completed
                 within schedule and budget.
               </p>

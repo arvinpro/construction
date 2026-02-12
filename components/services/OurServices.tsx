@@ -15,22 +15,22 @@ function OurServices() {
         <div className="flex flex-col md:flex-row justify-between items-start sm:items-center gap-6 lg:gap-0">
           <div className="w-full lg:w-auto">
             <div className="flex items-center gap-3 mb-2 sm:mb-3">
-              <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-800"></div>
+              <div className="w-8 sm:w-10 lg:w-12 h-px bg-primary"></div>
               <span
-                className={`text-gray-800 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+                className={`text-primary font-medium tracking-wide text-sm sm:text-base ${open.className}`}
               >
                 Our Services
               </span>
             </div>
             <h1
-              className={`${raleway.className} text-2xl sm:text-3xl text-black lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
+              className={`${raleway.className} text-2xl sm:text-3xl text-primary lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
             >
               Building With Purpose, <br />
               Serving With Excellence
             </h1>
           </div>
           <span
-            className={`w-full lg:max-w-lg text-base lg:text-base text-black ${open.className} lg:text-left `}
+            className={`w-full lg:max-w-lg text-base lg:text-base text-primary ${open.className} lg:text-left `}
           >
             At Quick S and A Construction Pvt. Ltd., our services go beyond
             laying bricks and pouring concrete. We create lasting infrastructure

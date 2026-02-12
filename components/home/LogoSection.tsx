@@ -42,20 +42,20 @@ export default function LogoSection() {
       <div className="flex flex-col md:flex-row justify-between gap-6 m-5">
         <div>
           <div className="flex items-center gap-3 mb-3">
-            <div className="w-10 h-px bg-black" />
-            <span className={`${open.className} text-sm text-black`}>
+            <div className="w-10 h-px bg-primary" />
+            <span className={`${open.className} text-sm text-primary`}>
               Our Clients
             </span>
           </div>
 
           <h1
-            className={`${raleway.className} text-3xl text-black lg:text-4xl font-semibold uppercase`}
+            className={`${raleway.className} text-3xl text-primary lg:text-4xl font-semibold uppercase`}
           >
             Trusted by Clients
           </h1>
         </div>
 
-        <p className={`max-w-lg ${open.className} text-black`}>
+        <p className={`max-w-lg ${open.className} text-primary`}>
            We are proud to collaborate with trusted clients and customers who
           believe in our quality and reliability.
         </p>

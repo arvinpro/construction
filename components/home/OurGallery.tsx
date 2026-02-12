@@ -8,21 +8,21 @@ function OurGallery() {
       <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0 mb-8">
         <div className="w-full lg:w-auto">
           <div className="flex items-center gap-3 mb-3 sm:mb-4">
-            <div className="w-8 sm:w-10 lg:w-12 h-px bg-gray-600"></div>
+            <div className="w-8 sm:w-10 lg:w-12 h-px bg-primary"></div>
             <span
-              className={`text-gray-600 font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+              className={`text-primary font-medium tracking-wide text-sm sm:text-base ${open.className}`}
             >
               Our Services
             </span>
           </div>
           <h1
-            className={`${raleway.className} text-black text-2xl sm:text-3xl lg:text-4xl uppercase font-semibold leading-tight sm:leading-normal`}
+            className={`${raleway.className} text-primary text-2xl sm:text-3xl lg:text-4xl uppercase font-semibold leading-tight sm:leading-normal`}
           >
             Our Gallery
           </h1>
         </div>
         <span
-          className={`w-full lg:max-w-lg text-base lg:text-base text-black ${open.className} lg:text-left `}
+          className={`w-full lg:max-w-lg text-base lg:text-base text-primary ${open.className} lg:text-left `}
         >
           A showcase of our work across Nepal — from residential homes to major
           infrastructure projects.

@@ -61,21 +61,21 @@ export default function Reviews() {
       <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0">
         <div className="w-full lg:w-auto">
           <div className="flex items-center gap-3 mb-2 sm:mb-3">
-            <div className="w-8 sm:w-10 lg:w-12 h-px bg-black"></div>
+            <div className="w-8 sm:w-10 lg:w-12 h-px bg-primary"></div>
             <span
-              className={`text-black font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+              className={`text-primary font-medium tracking-wide text-sm sm:text-base ${open.className}`}
             >
               Client Reviews
             </span>
           </div>
           <h1
-            className={`${raleway.className} text-black text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
+            className={`${raleway.className} text-primary text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
           >
             What Our Clients Say
           </h1>
         </div>
         <span
-          className={`w-full lg:max-w-lg text-base lg:text-base text-black ${open.className} lg:text-left `}
+          className={`w-full lg:max-w-lg text-base lg:text-base text-primary ${open.className} lg:text-left `}
         >
           Our clients’ feedback reflects the quality, commitment, and
           craftsmanship we bring to every project. From residential construction

@@ -28,21 +28,21 @@ function AboutUsSection() {
         <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0">
           <div className="w-full lg:w-auto">
             <div className="flex items-center gap-3 mb-2 sm:mb-3">
-              <div className="w-8 sm:w-10 lg:w-12 h-px bg-black"></div>
+              <div className="w-8 sm:w-10 lg:w-12 h-px bg-primary"></div>
               <span
-                className={`text-black font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+                className={`text-primary font-medium tracking-wide text-sm sm:text-base ${open.className}`}
               >
                 About Us
               </span>
             </div>
             <h1
-              className={`${raleway.className} text-black text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
+              className={`${raleway.className} text-primary text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
             >
               Who we are
             </h1>
           </div>
           <span
-            className={`w-full lg:max-w-lg text-base lg:text-base text-black ${open.className} lg:text-left `}
+            className={`w-full lg:max-w-lg text-base lg:text-base text-primary ${open.className} lg:text-left `}
           >
             Quick S and A Construction provides comprehensive solutions across
             Nepal’s construction sector, combining innovation, technical
@@ -88,7 +88,7 @@ function AboutUsSection() {
           </div>
           <div className="mt-8">
             <p
-              className={`font-normal leading-relaxed text-justify ${open.className}`}
+              className={`font-normal text-primary leading-relaxed text-justify ${open.className}`}
             >
               Quick S and A Construction Pvt. Ltd., established in 2076 B.S., is
               a professional construction company headquartered in Kathmandu,
@@ -127,7 +127,7 @@ function AboutUsSection() {
     flex items-center justify-center px-4 sm:px-6`}
           >
             <h1
-              className="text-center text-black font-semibold leading-tight
+              className="text-center text-primary font-semibold leading-tight
       text-xl sm:text-2xl md:text-3xl lg:text-4xl"
             >
               We deliver safe, sustainable, and innovative construction
@@ -164,13 +164,13 @@ function AboutUsSection() {
       "
             >
               <h1
-                className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-black ${raleway.className}`}
+                className={`text-2xl sm:text-3xl md:text-4xl font-semibold text-primary ${raleway.className}`}
               >
                 Message from The Director
               </h1>
 
               <p
-                className={`${open.className} text-sm sm:text-base md:text-lg text-black/70 text-justify"`}
+                className={`${open.className} text-sm sm:text-base md:text-lg text-primary/70 text-justify"`}
               >
                 As the Director of our respected construction company, I am
                 delighted to share our journey and achievements with you. With
@@ -223,21 +223,21 @@ function AboutUsSection() {
           <div className="flex flex-col md:flex-row justify-between items-start lg:items-end gap-6 lg:gap-0">
             <div className="w-full lg:w-auto">
               <div className="flex items-center gap-3 mb-2 sm:mb-3">
-                <div className="w-8 sm:w-10 lg:w-12 h-px bg-black"></div>
+                <div className="w-8 sm:w-10 lg:w-12 h-px bg-primary"></div>
                 <span
-                  className={`text-black font-medium tracking-wide text-sm sm:text-base ${open.className}`}
+                  className={`text-primary font-medium tracking-wide text-sm sm:text-base ${open.className}`}
                 >
                   About Us
                 </span>
               </div>
               <h1
-                className={`${raleway.className} text-black text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
+                className={`${raleway.className} text-primary text-2xl sm:text-3xl lg:text-[2.50rem] uppercase font-semibold leading-tight sm:leading-normal`}
               >
                 Meet our team
               </h1>
             </div>
             <span
-              className={`w-full lg:max-w-lg text-base lg:text-base text-black ${open.className} lg:text-left `}
+              className={`w-full lg:max-w-lg text-base lg:text-base text-primary ${open.className} lg:text-left `}
             >
               Quick S and A Construction provides comprehensive solutions across
               Nepal’s construction sector, combining innovation, technical
@@ -263,10 +263,10 @@ function AboutUsSection() {
 
                 {/* Text below image */}
                 <div className="text-start">
-                  <h1 className="text-base font-semibold text-black group-hover:text-sky-600 transition-colors duration-300">
+                  <h1 className="text-base font-semibold text-primary group-hover:text-sky-600 transition-colors duration-300">
                     {team.name}
                   </h1>
-                  <p className="text-sm text-gray-500">{team.role}</p>
+                  <p className="text-sm text-gray-800">{team.role}</p>
                 </div>
               </div>
             ))}

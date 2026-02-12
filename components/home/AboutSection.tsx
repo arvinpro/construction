@@ -44,12 +44,12 @@ function AboutSection() {
                hover:scale-95 transition"
                   aria-label="Scroll to top"
                 >
-                  <ChevronUp className="w-5 h-5 text-black" />
+                  <ChevronUp className="w-5 h-5 text-primary" />
                 </button>
               </ReactLink>
               {buttons.map((button) => (
                 <Link key={button.id} href={`/service#service-${button.id}`}>
-                  <button className="px-3 py-1.5 border cursor-pointer rounded-full text-xs text-white md:text-black font-medium hover:bg-sky-500 hover:text-white transition">
+                  <button className="px-3 py-1.5 border cursor-pointer rounded-full text-xs text-white md:text-primary font-medium hover:bg-sky-500 hover:text-white transition">
                     {button.label}
                   </button>
                 </Link>
@@ -114,7 +114,7 @@ function AboutSection() {
                 >
                   <button
                     className="px-4 py-2 border cursor-pointer rounded-full 
-      text-sm text-black font-medium 
+      text-sm text-primary font-medium 
       hover:bg-sky-500 hover:text-white 
       hover:scale-95 ease-out duration-300 transition"
                   >
@@ -129,15 +129,15 @@ function AboutSection() {
 
       <div className="">
         <div className="flex items-center gap-3 mb-4">
-          <div className="w-12 h-px bg-black"></div>
+          <div className="w-12 h-px bg-primary"></div>
           <span
-            className={`text-black font-medium tracking-wide ${open.className}`}
+            className={`text-primary font-medium tracking-wide ${open.className}`}
           >
             About Us
           </span>
         </div>
 
-        <div className={`${raleway.className} space-y-3 text-black`}>
+        <div className={`${raleway.className} space-y-3 text-primary`}>
           <h1
             className={`font-semibold text-xl sm:text-2xl lg:text-3xl leading-10 tracking-normal text-justify`}
           >

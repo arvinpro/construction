@@ -13,7 +13,7 @@ export default function HeroSection() {
     <>
       <div
         id="hero"
-        className={`${raleway.className} text-black font-raleway mb-12 space-y-3 `}
+        className={`${raleway.className} text-primary font-raleway mb-12 space-y-3 `}
       >
         <h1 className="text-3xl sm:text-4xl font-bold uppercase tracking-tight">
           Your Trusted Construction
@@ -50,7 +50,7 @@ export default function HeroSection() {
             </div>
 
             {/* Buttons */}
-            <div className="mt-4 flex flex-wrap gap-3 text-black">
+            <div className="mt-4 flex flex-wrap gap-3 text-primary">
               {services.map((service) => (
                 <Link key={service.id} href={`/service#service-${service.id}`}>
                   <span

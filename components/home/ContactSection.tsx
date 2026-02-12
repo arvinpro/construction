@@ -52,14 +52,14 @@ function ContactSection() {
             <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4">
               <div className="w-6 sm:w-8 md:w-10 lg:w-12 h-px bg-gray-600"></div>
               <span
-                className={`text-gray-600 font-medium tracking-wide text-xs sm:text-sm md:text-base ${open.className}`}
+                className={`text-primary font-medium tracking-wide text-xs sm:text-sm md:text-base ${open.className}`}
               >
                 Contact Us
               </span>
             </div>
 
             <h1
-              className={`${raleway.className} text-black text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase font-semibold leading-tight sm:leading-normal`}
+              className={`${raleway.className} text-primary text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase font-semibold leading-tight sm:leading-normal`}
             >
               LET'S KEEP IN TOUCH
             </h1>
@@ -72,7 +72,7 @@ function ContactSection() {
                 <span className="text-xs sm:text-sm md:text-base text-gray-800 whitespace-nowrap">
                   PHONE
                 </span>
-                <span className="font-semibold text-black text-xs sm:text-sm md:text-base text-right">
+                <span className="font-semibold text-primary text-xs sm:text-sm md:text-base text-right">
                   +977-9851149961
                 </span>
               </div>
@@ -85,7 +85,7 @@ function ContactSection() {
                 <span className="text-xs sm:text-sm md:text-base text-gray-800 whitespace-nowrap">
                   EMAIL
                 </span>
-                <span className="font-semibold text-black text-xs sm:text-sm md:text-base text-right break-all">
+                <span className="font-semibold text-primary text-xs sm:text-sm md:text-base text-right break-all">
                   quicksnaconstruction@gmail.com
                 </span>
               </div>
@@ -98,7 +98,7 @@ function ContactSection() {
                 <span className="text-xs sm:text-sm md:text-base text-gray-800 whitespace-nowrap">
                   LOCATION
                 </span>
-                <span className="font-semibold text-black text-xs sm:text-sm md:text-base text-right">
+                <span className="font-semibold text-primary text-xs sm:text-sm md:text-base text-right">
                   Nagarjun-07, Kathmandu, Nepal
                 </span>
               </div>
